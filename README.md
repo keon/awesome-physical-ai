@@ -1,6 +1,6 @@
 # Awesome Physical AI [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of academic papers and resources on **Physical AI** — focusing on Vision-Language-Action (VLA) models, world models, embodied intelligence, and robotic foundation models.
+A curated list of academic papers and resources on **Physical AI** — focusing on Vision-Language-Action (VLA) models, world models, embodied ai, and robotic foundation models.
 
 > **Physical AI** refers to AI systems that interact with and manipulate the physical world through robotic embodiments, combining perception, reasoning, and action in real-world environments.
 
