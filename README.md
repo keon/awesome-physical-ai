@@ -1,6 +1,6 @@
 # Awesome Physical AI [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of academic papers and resources on **Physical AI** — focusing on Vision-Language-Action (VLA) models, embodied intelligence, and robotic foundation models.
+A curated list of academic papers and resources on **Physical AI** — focusing on Vision-Language-Action (VLA) models, world models, embodied intelligence, and robotic foundation models.
 
 > **Physical AI** refers to AI systems that interact with and manipulate the physical world through robotic embodiments, combining perception, reasoning, and action in real-world environments.
 
@@ -61,7 +61,6 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **SigLIP**: "Sigmoid Loss for Language Image Pre-Training", *ICCV 2023*. [[Paper](https://arxiv.org/abs/2303.15343)]
 
 - **PaLI-X**: "PaLI-X: On Scaling up a Multilingual Vision and Language Model", *CVPR 2024*. [[Paper](https://arxiv.org/abs/2305.18565)]
-  - Vision-language backbone for RT-2.
 
 - **LLaVA**: "Visual Instruction Tuning", *NeurIPS 2023*. [[Paper](https://arxiv.org/abs/2304.08485)] [[Project](https://llava-vl.github.io/)]
 
@@ -77,7 +76,6 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **SAM**: "Segment Anything", *ICCV 2023*. [[Paper](https://arxiv.org/abs/2304.02643)] [[Project](https://segment-anything.com/)]
 
 - **R3M**: "R3M: A Universal Visual Representation for Robot Manipulation", *CoRL 2022*. [[Paper](https://arxiv.org/abs/2203.12601)] [[Code](https://github.com/facebookresearch/r3m)]
-  - Pretrained on Ego4D human video, transfers effectively to robot manipulation.
 
 - **MVP**: "Masked Visual Pre-training for Motor Control", *arXiv, Mar 2022*. [[Paper](https://arxiv.org/abs/2203.06173)] [[Project](https://tetexiao.com/projects/mvp)]
 
@@ -160,7 +158,6 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **RT-H**: "RT-H: Action Hierarchies Using Language", *arXiv, Mar 2024*. [[Paper](https://arxiv.org/abs/2403.01823)] [[Project](https://rt-hierarchy.github.io/)]
 
 - **LAPA**: "Latent Action Pretraining from Videos", *arXiv, Oct 2024*. [[Paper](https://arxiv.org/abs/2410.11758)] [[Project](https://latentactionpretraining.github.io/)]
-  - Pretrains action representations from unlabeled video.
 
 ---
 
@@ -221,7 +218,6 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
   - LeCun's foundational vision describing the "world model in the middle" cognitive architecture.
 
 - **I-JEPA**: "Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture", *CVPR 2023*. [[Paper](https://arxiv.org/abs/2301.08243)] [[Code](https://github.com/facebookresearch/ijepa)]
-  - First practical JEPA implementation.
 
 - **V-JEPA**: "Video Joint Embedding Predictive Architecture", *arXiv, Feb 2024*. [[Paper](https://arxiv.org/abs/2402.03014)] [[Code](https://github.com/facebookresearch/jepa)]
 
@@ -254,7 +250,6 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **GAIA-1**: "GAIA-1: A Generative World Model for Autonomous Driving", *arXiv, Sep 2023*. [[Paper](https://arxiv.org/abs/2309.17080)]
 
 - **GameNGen**: "Diffusion Models Are Real-Time Game Engines", *arXiv, Aug 2024*. [[Paper](https://arxiv.org/abs/2408.14837)]
-  - Runs DOOM entirely on a neural network.
 
 - **DIAMOND**: "Diffusion for World Modeling: Visual Details Matter in Atari", *NeurIPS 2024*. [[Paper](https://arxiv.org/abs/2405.12399)] [[Code](https://github.com/eloialonso/diamond)]
 
@@ -286,7 +281,6 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **MineDreamer**: "MineDreamer: Learning to Follow Instructions via Chain-of-Imagination", *arXiv, Mar 2024*. [[Paper](https://arxiv.org/abs/2403.12037)] [[Project](https://sites.google.com/view/minedreamer)]
 
 - **Video Language Planning**: "Video Language Planning", *ICLR 2024*. [[Paper](https://arxiv.org/abs/2310.10625)] [[Project](https://video-language-planning.github.io/)]
-  - Combines video prediction with tree search for long-horizon planning.
 
 - "Learning Universal Policies via Text-Guided Video Generation", *NeurIPS 2023*. [[Paper](https://arxiv.org/abs/2302.00111)] [[Project](https://universal-policy.github.io/unipi/)]
 
@@ -303,12 +297,10 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 > Models implementing "thinking before acting" with explicit reasoning or value-guided search.
 
 - **Hume**: "Hume: Introducing Deliberative Alignment in Embodied AI", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.XXXXX)]
-  - Uses a value-query head to evaluate candidate actions via repeat sampling.
 
 - **Embodied-CoT**: "Robotic Control via Embodied Chain-of-Thought Reasoning", *arXiv, Jul 2024*. [[Paper](https://arxiv.org/abs/2407.08693)] [[Project](https://embodied-cot.github.io/)]
 
 - **ReAct**: "ReAct: Synergizing Reasoning and Acting in Language Models", *ICLR 2023*. [[Paper](https://arxiv.org/abs/2210.03629)] [[Code](https://github.com/ysymyth/ReAct)]
-  - Interleaves reasoning traces with actions.
 
 - **ReKep**: "ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints", *CoRL 2024*. [[Paper](https://arxiv.org/abs/2409.01652)] [[Project](https://rekep-robot.github.io/)]
 
@@ -343,7 +335,6 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 > Behavioral cloning and learning from demonstrations.
 
 - **CLIPort**: "CLIPort: What and Where Pathways for Robotic Manipulation", *CoRL 2021*. [[Paper](https://arxiv.org/abs/2109.12098)] [[Project](https://cliport.github.io/)] [[Code](https://github.com/cliport/cliport)]
-  - Combines CLIP semantic features with transporter networks.
 
 - **Play-LMP**: "Learning Latent Plans from Play", *CoRL 2019*. [[Paper](https://arxiv.org/abs/1903.01973)] [[Project](https://learning-from-play.github.io/)]
   - Learns reusable skills from unstructured "play" data without task labels.
@@ -389,7 +380,6 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 > Automated reward function generation using language models.
 
 - **Text2Reward**: "Text2Reward: Automated Dense Reward Function Generation", *arXiv, Sep 2023*. [[Paper](https://arxiv.org/abs/2309.11489)] [[Project](https://text-to-reward.github.io/)]
-  - LLMs generate dense reward code from task descriptions.
 
 - **Language to Rewards**: "Language to Rewards for Robotic Skill Synthesis", *CoRL 2023*. [[Paper](https://arxiv.org/abs/2306.08647)] [[Project](https://language-to-reward.github.io/)]
 
@@ -408,7 +398,6 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - "Data Scaling Laws in Imitation Learning for Robotic Manipulation", *arXiv, Oct 2024*. [[Paper](https://arxiv.org/abs/2410.18647)] [[Project](https://data-scaling-laws.github.io/)]
 
 - **AutoRT**: "AutoRT: Embodied Foundation Models for Large Scale Orchestration", *ICRA 2024*. [[Paper](https://arxiv.org/abs/2401.12963)] [[Project](https://auto-rt.github.io/)]
-  - Demonstrates autonomous fleet data collection enabling continuous scaling.
 
 - **SARA-RT**: "SARA-RT: Scaling up Robotics Transformers with Self-Adaptive Robust Attention", *arXiv, Dec 2023*. [[Paper](https://arxiv.org/abs/2312.01990)]
 
@@ -419,7 +408,6 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 > Single policies controlling diverse robot types.
 
 - **RT-X**: "Open X-Embodiment: Robotic Learning Datasets and RT-X Models", *ICRA 2024*. [[Paper](https://arxiv.org/abs/2310.08864)] [[Project](https://robotics-transformer-x.github.io/)]
-  - Largest cross-embodiment study with 22 robot types.
 
 - **GENBOT-1K**: "Towards Embodiment Scaling Laws: Training on ~1000 Robot Bodies", *arXiv, 2025*. [[Paper](https://arxiv.org/abs/2505.XXXXX)]
   - Training on ~1,000 robot bodies enables zero-shot transfer to unseen robots.
@@ -467,7 +455,6 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 > Low-bit weight quantization for efficient edge deployment.
 
 - **BitVLA**: "BitVLA: 1-bit Vision-Language-Action Models for Robotics", *arXiv, 2025*. [[Paper](https://arxiv.org/abs/2505.XXXXX)]
-  - First 1-bit (ternary) VLA reducing memory to 29.8%.
 
 - **DeeR-VLA**: "DeeR-VLA: Dynamic Inference of Multimodal LLMs for Efficient Robot Execution", *arXiv, Nov 2024*. [[Paper](https://arxiv.org/abs/2411.02359)] [[Code](https://github.com/yueyang130/DeeR-VLA)]
 
@@ -480,7 +467,6 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 > Methods bridging high-latency AI inference and low-latency physical control.
 
 - **A2C2**: "A2C2: Asynchronous Action Chunk Correction for Real-Time Robot Control", *arXiv, 2025*. [[Paper](https://arxiv.org/abs/2512.XXXXX)]
-  - Lightweight head adjusting outdated action chunks based on latest observations.
 
 - **RTC**: "Real-Time Chunking: Asynchronous Execution for Robot Control", *arXiv, 2025*. [[Paper](https://arxiv.org/abs/2505.XXXXX)]
 
@@ -496,7 +482,6 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **ASIMOV**: "ASIMOV: A Safety Benchmark for Embodied AI", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.XXXXX)]
 
 - **RoboPAIR**: "Jailbreaking LLM-Controlled Robots", *ICRA 2025*. [[Paper](https://arxiv.org/abs/2410.13691)] [[Project](https://robopair.org/)]
-  - Demonstrates adversarial attacks on LLM-controlled robots.
 
 - **RoboGuard**: "Safety Guardrails for LLM-Enabled Robots", *arXiv, Apr 2025*. [[Paper](https://arxiv.org/abs/2504.XXXXX)]
 
@@ -521,7 +506,6 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **RoboGen**: "RoboGen: A Generative and Self-Guided Robotic Agent", *arXiv, Nov 2023*. [[Paper](https://arxiv.org/abs/2311.01455)] [[Project](https://robogen-ai.github.io/)]
 
 - **RoboCat**: "RoboCat: A Self-Improving Generalist Agent for Robotic Manipulation", *arXiv, Jun 2023*. [[Paper](https://arxiv.org/abs/2306.11706)] [[Blog](https://deepmind.google/discover/blog/robocat-a-self-improving-robotic-agent/)]
-  - Self-improves through cycles of self-generated data collection.
 
 - **LOTUS**: "LOTUS: Continual Imitation Learning via Unsupervised Skill Discovery", *arXiv, Dec 2024*. [[Paper](https://arxiv.org/abs/2311.02058)] [[Project](https://ut-austin-rpl.github.io/Lotus/)]
 
@@ -542,7 +526,6 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 > Foundation models for humanoid robot control.
 
 - **GR00T N1**: "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.14734)] [[Project](https://developer.nvidia.com/isaac/gr00t)]
-  - NVIDIA's dual-system architecture for humanoid control.
 
 - **HumanPlus**: "HumanPlus: Humanoid Shadowing and Imitation from Humans", *arXiv, Jun 2024*. [[Paper](https://arxiv.org/abs/2406.10454)] [[Project](https://humanoid-ai.github.io/)]
 
@@ -604,77 +587,69 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 ### Datasets & Benchmarks
 
-- **Open X-Embodiment**: Largest open-source robot dataset with 1M+ trajectories from 22 embodiments. [[Paper](https://arxiv.org/abs/2310.08864)] [[Project](https://robotics-transformer-x.github.io/)]
-
-- **DROID**: Large-scale in-the-wild manipulation dataset (76K trajectories, 564 scenes). [[Paper](https://arxiv.org/abs/2403.12945)] [[Project](https://droid-dataset.github.io/)]
-
-- **BridgeData V2**: Multi-task dataset for few-shot transfer. [[Paper](https://arxiv.org/abs/2308.12952)] [[Project](https://rail-berkeley.github.io/bridgedata/)]
-
-- **ARIO**: Standardized format unifying diverse robot datasets. [[Paper](https://arxiv.org/abs/2408.10899)] [[Project](https://imaei.github.io/project_pages/ario/)]
-
-- **LIBERO**: Benchmark for lifelong robot learning (130 tasks). [[Paper](https://arxiv.org/abs/2306.03310)] [[Project](https://libero-project.github.io/)]
-
-- **RoboMIND**: Multi-embodiment intelligence benchmark. [[Paper](https://arxiv.org/abs/2412.13877)] [[Project](https://x-humanoid-robomind.github.io/)]
-
-- **VLABench**: Long-horizon reasoning benchmark. [[Paper](https://arxiv.org/abs/2412.18194)] [[Project](https://vlabench.github.io/)]
-
-- **SIMPLER**: Sim-to-real evaluation framework. [[Paper](https://arxiv.org/abs/2405.05941)] [[Project](https://simpler-env.github.io/)]
-
-- **RoboCasa**: Large-scale household task simulation. [[Paper](https://arxiv.org/abs/2407.10943)] [[Project](https://robocasa.ai/)]
-
-- **CALVIN**: Long-horizon language-conditioned manipulation. [[Paper](https://arxiv.org/abs/2112.03227)] [[Project](http://calvin.cs.uni-freiburg.de/)]
-
-- **RLBench**: 100 diverse manipulation tasks. [[Paper](https://arxiv.org/abs/1909.12271)] [[Project](https://sites.google.com/view/rlbench)]
-
-- **ARNOLD**: Language-grounded task learning in realistic 3D. [[Paper](https://arxiv.org/abs/2304.04321)] [[Project](https://arnold-benchmark.github.io/)]
-
-- **ALFRED**: Vision-language navigation and manipulation. [[Paper](https://arxiv.org/abs/1912.01734)] [[Project](https://askforalfred.com/)]
-
-- **GenSim / GenSim2**: LLM-based procedural task generation. [[Paper](https://arxiv.org/abs/2310.01361)] [[Project](https://gen-sim.github.io/)]
-
-- **MineDojo**: Minecraft-based platform with YouTube pretraining. [[Paper](https://arxiv.org/abs/2206.08853)] [[Project](https://minedojo.org/)]
+| Dataset | Scale | Focus | Links |
+|---------|-------|-------|-------|
+| Open X-Embodiment | 1M+ trajectories, 22 robots | Cross-embodiment | [Paper](https://arxiv.org/abs/2310.08864) · [Project](https://robotics-transformer-x.github.io/) |
+| DROID | 76K trajectories, 564 scenes | In-the-wild manipulation | [Paper](https://arxiv.org/abs/2403.12945) · [Project](https://droid-dataset.github.io/) |
+| BridgeData V2 | Multi-task | Few-shot transfer | [Paper](https://arxiv.org/abs/2308.12952) · [Project](https://rail-berkeley.github.io/bridgedata/) |
+| ARIO | Unified format | Dataset standardization | [Paper](https://arxiv.org/abs/2408.10899) · [Project](https://imaei.github.io/project_pages/ario/) |
+| LIBERO | 130 tasks | Lifelong learning | [Paper](https://arxiv.org/abs/2306.03310) · [Project](https://libero-project.github.io/) |
+| RoboMIND | Multi-embodiment | Intelligence benchmark | [Paper](https://arxiv.org/abs/2412.13877) · [Project](https://x-humanoid-robomind.github.io/) |
+| VLABench | Long-horizon | Reasoning benchmark | [Paper](https://arxiv.org/abs/2412.18194) · [Project](https://vlabench.github.io/) |
+| SIMPLER | Sim-to-real | Policy evaluation | [Paper](https://arxiv.org/abs/2405.05941) · [Project](https://simpler-env.github.io/) |
+| RoboCasa | Large-scale | Household tasks | [Paper](https://arxiv.org/abs/2407.10943) · [Project](https://robocasa.ai/) |
+| CALVIN | Long-horizon | Language-conditioned | [Paper](https://arxiv.org/abs/2112.03227) · [Project](http://calvin.cs.uni-freiburg.de/) |
+| RLBench | 100 tasks | Manipulation benchmark | [Paper](https://arxiv.org/abs/1909.12271) · [Project](https://sites.google.com/view/rlbench) |
+| ARNOLD | Realistic 3D | Language-grounded | [Paper](https://arxiv.org/abs/2304.04321) · [Project](https://arnold-benchmark.github.io/) |
+| ALFRED | VLN + manipulation | Instruction following | [Paper](https://arxiv.org/abs/1912.01734) · [Project](https://askforalfred.com/) |
+| GenSim / GenSim2 | Procedural | Task generation | [Paper](https://arxiv.org/abs/2310.01361) · [Project](https://gen-sim.github.io/) |
+| MineDojo | Minecraft | Open-world learning | [Paper](https://arxiv.org/abs/2206.08853) · [Project](https://minedojo.org/) |
 
 ### Simulation Platforms
 
-- **ManiSkill3**: GPU-parallelized robotics simulation. [[Paper](https://arxiv.org/abs/2410.00425)] [[Project](https://www.maniskill.ai/)]
-
-- **Genesis**: Differentiable physics engine. [[Project](https://genesis-embodied-ai.github.io/)]
-
-- **Isaac Lab / Isaac Sim**: NVIDIA's robotics simulation. [[Project](https://developer.nvidia.com/isaac-sim)]
-
-- **MuJoCo Playground**: Browser-based MuJoCo. [[Project](https://playground.mujoco.org/)]
-
-- **OmniGibson**: High-fidelity home simulation. [[Paper](https://arxiv.org/abs/2311.01014)] [[Project](https://behavior.stanford.edu/omnigibson/)]
-
-- **Habitat 2.0**: Navigation and rearrangement simulation. [[Paper](https://arxiv.org/abs/2106.14405)] [[Project](https://aihabitat.org/)]
-
-- **BEHAVIOR-1K**: 1,000 everyday activities benchmark. [[Paper](https://arxiv.org/abs/2403.09227)] [[Project](https://behavior.stanford.edu/)]
-
-- **iGibson**: Interactive environments with object state changes. [[Paper](https://arxiv.org/abs/2012.02924)] [[Project](https://svl.stanford.edu/igibson/)]
-
-- **RoboSuite**: Modular manipulation framework. [[Paper](https://arxiv.org/abs/2009.12293)] [[Project](https://robosuite.ai/)]
-
-- **PyBullet**: Lightweight physics engine for RL. [[Project](https://pybullet.org/)]
+| Platform | Focus | Links |
+|----------|-------|-------|
+| ManiSkill3 | GPU-parallelized robotics | [Paper](https://arxiv.org/abs/2410.00425) · [Project](https://www.maniskill.ai/) |
+| Genesis | Differentiable physics | [Project](https://genesis-embodied-ai.github.io/) |
+| Isaac Lab / Isaac Sim | NVIDIA robotics simulation | [Project](https://developer.nvidia.com/isaac-sim) |
+| MuJoCo Playground | Browser-based MuJoCo | [Project](https://playground.mujoco.org/) |
+| OmniGibson | High-fidelity home simulation | [Paper](https://arxiv.org/abs/2311.01014) · [Project](https://behavior.stanford.edu/omnigibson/) |
+| Habitat 2.0 | Navigation & rearrangement | [Paper](https://arxiv.org/abs/2106.14405) · [Project](https://aihabitat.org/) |
+| BEHAVIOR-1K | 1,000 everyday activities | [Paper](https://arxiv.org/abs/2403.09227) · [Project](https://behavior.stanford.edu/) |
+| iGibson | Interactive environments | [Paper](https://arxiv.org/abs/2012.02924) · [Project](https://svl.stanford.edu/igibson/) |
+| RoboSuite | Modular manipulation | [Paper](https://arxiv.org/abs/2009.12293) · [Project](https://robosuite.ai/) |
+| PyBullet | Lightweight physics for RL | [Project](https://pybullet.org/) |
 
 ---
 
 ## Surveys
 
-- "Foundation Models in Robotics: Applications, Challenges, and the Future", *IJRR 2024*. [[Paper](https://arxiv.org/abs/2312.07843)] [[GitHub](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models)]
+| Survey | Venue | Links |
+|--------|-------|-------|
+| Foundation Models in Robotics | IJRR 2024 | [Paper](https://arxiv.org/abs/2312.07843) · [GitHub](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models) |
+| General-Purpose Robots via Foundation Models | arXiv 2023 | [Paper](https://arxiv.org/abs/2312.08782) |
+| Robot Learning in the Era of Foundation Models | arXiv 2023 | [Paper](https://arxiv.org/abs/2311.14379) |
+| Language-conditioned Learning for Manipulation | arXiv 2023 | [Paper](https://arxiv.org/abs/2312.10807) |
+| Vision-Language-Action Models | arXiv 2025 | [Paper](https://arxiv.org/abs/2501.02816) |
+| Comprehensive Review of World Models | arXiv 2024 | [Paper](https://arxiv.org/abs/2406.XXXXX) |
+| LLMs for Embodied Navigation | arXiv 2023 | [Paper](https://arxiv.org/abs/2311.00530) |
+| Embodied Learning for Object-Centric Manipulation | arXiv 2024 | [Paper](https://arxiv.org/abs/2408.11537) |
 
-- "Toward General-Purpose Robots via Foundation Models: A Survey and Meta-Analysis", *arXiv, Dec 2023*. [[Paper](https://arxiv.org/abs/2312.08782)]
+---
 
-- "Robot Learning in the Era of Foundation Models: A Survey", *arXiv, Nov 2023*. [[Paper](https://arxiv.org/abs/2311.14379)]
+## Citation
 
-- "Language-conditioned Learning for Robotic Manipulation: A Survey", *arXiv, Dec 2023*. [[Paper](https://arxiv.org/abs/2312.10807)]
+If you find this repository useful, please consider citing this list:
 
-- "Vision-Language-Action Models: Concepts, Progress, Applications and Challenges", *arXiv, Jan 2025*. [[Paper](https://arxiv.org/abs/2501.02816)]
-
-- "Understanding World or Predicting Future? A Comprehensive Review of World Models", *arXiv, 2024*. [[Paper](https://arxiv.org/abs/2406.XXXXX)]
-
-- "The Development of LLMs for Embodied Navigation", *arXiv, Nov 2023*. [[Paper](https://arxiv.org/abs/2311.00530)]
-
-- "A Survey of Embodied Learning for Object-Centric Robotic Manipulation", *arXiv, Aug 2024*. [[Paper](https://arxiv.org/abs/2408.11537)]
+```bibtex
+@misc{awesome-physical-ai,
+    title = {Awesome Physical AI},
+    author = {Keon Kim},
+    journal = {GitHub repository},
+    url = {https://github.com/keon/awesome-physical-ai},
+    year = {2026},
+}
+```
 
 ---
 
@@ -684,16 +659,7 @@ We welcome contributions! Please submit a pull request to add relevant papers, c
 
 ### Guidelines
 
-- Focus on **Physical AI** papers (robotics, embodied agents, VLAs)
+- Focus on **Physical AI** papers (robotics, embodied agents, world models, VLAs)
 - Each paper should appear in only one category
 - Include proper citations with links to papers, projects, and code
 - Verify all links are working
-
----
-
-## Acknowledgments
-
-This list draws inspiration from:
-- [Awesome-LLM-Robotics](https://github.com/GT-RIPL/Awesome-LLM-Robotics)
-- [Awesome-Generalist-Agents](https://github.com/cheryyunl/awesome-generalist-agents)
-- [Awesome-Robotics-Foundation-Models](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models)
