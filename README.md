@@ -46,6 +46,7 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
   - [Datasets & Benchmarks](#datasets--benchmarks)
   - [Simulation Platforms](#simulation-platforms)
 - [Surveys](#surveys)
+- [Companies & Projects](#companies--projects)
 
 ---
 
@@ -634,6 +635,69 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 | Comprehensive Review of World Models | arXiv 2024 | [Paper](https://arxiv.org/abs/2406.XXXXX) |
 | LLMs for Embodied Navigation | arXiv 2023 | [Paper](https://arxiv.org/abs/2311.00530) |
 | Embodied Learning for Object-Centric Manipulation | arXiv 2024 | [Paper](https://arxiv.org/abs/2408.11537) |
+
+---
+
+## Companies & Projects
+
+### Companies
+
+| Company | Focus | Key Products | Links |
+|---------|-------|--------------|-------|
+| Physical Intelligence (π) | General-purpose robot foundation models | π₀, π₀.5, π₀.6, FAST | [Web](https://www.pi.website/) · [Blog](https://www.pi.website/) |
+| Google DeepMind | Robotics research | RT-1/2, Gemini Robotics, Genie, PaLM-E | [Web](https://deepmind.google/) · [Blog](https://deepmind.google/discover/blog/) |
+| OpenAI | AI research | CLIP, GPT-4V, Sora | [Web](https://openai.com/) · [Blog](https://openai.com/blog/) |
+| Meta AI (FAIR) | JEPA, embodied AI | I-JEPA, V-JEPA, R3M, DINOv2, SAM | [Web](https://ai.meta.com/) · [Blog](https://ai.meta.com/blog/) |
+| World Labs | Spatial intelligence & world models | Marble, RTFM | [Web](https://www.worldlabs.ai/) |
+| NVIDIA | Simulation & foundation models | GR00T, Isaac Sim, Cosmos | [Web](https://developer.nvidia.com/isaac) · [Blog](https://developer.nvidia.com/blog/) |
+| Microsoft Research | Multimodal agents | Magma | [Web](https://www.microsoft.com/en-us/research/) · [Blog](https://www.microsoft.com/en-us/research/blog/) |
+| Hugging Face | Open-source VLAs | LeRobot, SmolVLA | [Web](https://huggingface.co/) · [Blog](https://huggingface.co/blog) |
+| ByteDance | Vision-language-action models | GR-1, GR-2, CogACT | [Web](https://www.bytedance.com/) |
+| Shanghai AI Lab | Embodied AI research | LEO, InternVL | [Web](https://www.shlab.org.cn/) |
+| Covariant | Industrial robotics AI | RFM-1 | [Web](https://covariant.ai/) · [Blog](https://covariant.ai/insights/) |
+| Skild AI | General-purpose robot brain | Skild Brain | [Web](https://www.skild.ai/) |
+| RLWRLD | Industrial robotics foundation models | RFM | [Web](https://www.rlwrld.ai/) · [Blog](https://www.rlwrld.ai/blog) |
+| Intrinsic (Alphabet) | Industrial robotics software | Flowstate | [Web](https://intrinsic.ai/) · [Blog](https://intrinsic.ai/blog) |
+| Wayve | Embodied AI for driving | GAIA-1, LINGO | [Web](https://wayve.ai/) · [Blog](https://wayve.ai/thinking/) |
+| Cortex AI | Real-world data for embodied AI | Egocentric + robot datasets | [Web](https://cortexrobot.ai/) |
+| Verne Robotics | Mobile manipulation | Nemo | [Web](https://www.vernerobotics.com/) |
+| Figure AI | Humanoid robots | Figure 01, Figure 02 | [Web](https://www.figure.ai/) |
+| 1X Technologies | Humanoid robots | NEO, EVE | [Web](https://www.1x.tech/) · [Blog](https://www.1x.tech/discover) |
+| Boston Dynamics | Advanced robotics | Atlas, Spot, Stretch | [Web](https://bostondynamics.com/) · [Blog](https://bostondynamics.com/blog/) |
+| Tesla | Humanoid robots | Optimus | [Web](https://www.tesla.com/optimus) |
+| Agility Robotics | Bipedal robots | Digit | [Web](https://agilityrobotics.com/) · [Blog](https://agilityrobotics.com/blog) |
+| Unitree | Quadruped & humanoid robots | H1, G1, Go2 | [Web](https://www.unitree.com/) |
+| Sanctuary AI | Humanoid robots | Phoenix | [Web](https://sanctuary.ai/) · [Blog](https://sanctuary.ai/resources/) |
+| Apptronik | Humanoid robots | Apollo | [Web](https://apptronik.com/) |
+| Fourier Intelligence | Humanoid & rehab robots | GR-1, GR-2 | [Web](https://www.fftai.com/) |
+| Hello Robot | Mobile manipulation | Stretch | [Web](https://hello-robot.com/) · [Blog](https://hello-robot.com/blog) |
+| Franka Robotics | Research robot arms | Panda | [Web](https://franka.de/) |
+| Universal Robots | Collaborative robot arms | UR3, UR5, UR10 | [Web](https://www.universal-robots.com/) · [Blog](https://www.universal-robots.com/blog/) |
+| UFACTORY | Affordable robot arms | xArm | [Web](https://www.ufactory.cc/) |
+| Trossen Robotics | Research platforms | ViperX, WidowX, ALOHA | [Web](https://www.trossenrobotics.com/) |
+| Flexiv | Adaptive robot arms | Rizon | [Web](https://www.flexiv.com/) |
+
+### Research Labs & Initiatives
+
+| Organization | Notable Contributions | Links |
+|--------------|----------------------|-------|
+| Stanford IRIS Lab | Diffusion Policy, MimicPlay | [Web](https://irislab.stanford.edu/) |
+| Stanford SVL | BEHAVIOR, OmniGibson, VoxPoser | [Web](https://svl.stanford.edu/) |
+| Stanford ILIAD | ACT, ALOHA, Mobile ALOHA | [Web](https://iliad.stanford.edu/) |
+| Berkeley RAIL | Octo, BridgeData, R3M | [Web](https://rail.eecs.berkeley.edu/) |
+| Berkeley BAIR | RT-X contributions, RoboAgent | [Web](https://bair.berkeley.edu/) · [Blog](https://bair.berkeley.edu/blog/) |
+| CMU Robotics Institute | HomeRobot, OK-Robot | [Web](https://www.ri.cmu.edu/) |
+| MIT CSAIL | LLM planning, manipulation | [Web](https://www.csail.mit.edu/) |
+| NYU CILVR | OPEN TEACH, DynaMo, World Models | [Web](https://wp.nyu.edu/cilvr/) |
+| Princeton REAL Lab | Manipulation research | [Web](https://robo-princeton.github.io/) |
+| Columbia Robotics | Diffusion Policy, CLIPort | [Web](https://robotics.columbia.edu/) |
+| Georgia Tech RIPL | LLM-Robotics survey | [Web](https://sites.gatech.edu/ripl/) |
+| UW RSE Lab | CLIPort, VLAs | [Web](https://rse-lab.cs.washington.edu/) |
+| Toyota Research Institute | Prismatic VLMs, OpenVLA | [Web](https://www.tri.global/) · [Blog](https://www.tri.global/news) |
+| Tsinghua MARS Lab | LEO, CogACT | [Web](https://group.iiis.tsinghua.edu.cn/~marslab/) |
+| Peking University | NaVid, various VLAs | [Web](https://www.pku.edu.cn/) |
+| Open X-Embodiment | OXE dataset, RT-X | [Web](https://robotics-transformer-x.github.io/) |
+| DROID Collaboration | DROID dataset | [Web](https://droid-dataset.github.io/) |
 
 ---
 
