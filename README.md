@@ -17,6 +17,7 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
   - [Compact & Efficient VLAs](#compact--efficient-vlas)
 - [Action Representation](#action-representation)
   - [Discrete Tokenization](#discrete-tokenization)
+  - [Discrete Diffusion VLAs](#discrete-diffusion-vlas)
   - [Continuous & Diffusion Policies](#continuous--diffusion-policies)
 - [World Models](#world-models)
   - [JEPA & Latent Prediction](#jepa--latent-prediction)
@@ -42,11 +43,13 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
   - [Humanoid Robots](#humanoid-robots)
   - [Manipulation](#manipulation)
   - [Navigation](#navigation)
+- [Sim-to-Real Transfer](#sim-to-real-transfer)
 - [Resources](#resources)
   - [Datasets & Benchmarks](#datasets--benchmarks)
   - [Simulation Platforms](#simulation-platforms)
 - [Surveys](#surveys)
 - [Companies & Projects](#companies--projects)
+- [Related Works](#related-works)
 
 ---
 
@@ -118,6 +121,65 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **RoboVLMs**: "Towards Generalist Robot Policies: What Matters in Building Vision-Language-Action Models", *arXiv, Dec 2024*. [[Paper](https://arxiv.org/abs/2412.14058)] [[Project](https://robovlms.github.io/)]
 
+- **π0.5**: "π0.5: A Vision-Language-Action Model with Open-World Generalization", *Physical Intelligence, Apr 2025*. [[Paper](https://arxiv.org/abs/2504.16054)] [[Project](https://www.pi.website/blog/pi05)] [[Code](https://github.com/Physical-Intelligence/openpi)]
+
+- **π0.6**: "π0.6: A VLA that Learns from Experience", *Physical Intelligence, 2025*. [[Blog](https://www.physicalintelligence.company/blog/pistar06)]
+
+- **GR-3**: "GR-3 Technical Report", *ByteDance Seed, Jul 2025*. [[Paper](https://arxiv.org/abs/2507.15493)] [[Project](https://seed.bytedance.com/GR3)]
+
+- **UniVLA**: "UniVLA: Unified Vision-Language-Action Model", *arXiv, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.19850)] [[Code](https://github.com/baaivision/UniVLA)]
+
+- **SpatialVLA**: "SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Model", *arXiv, Jan 2025*. [[Paper](https://arxiv.org/abs/2501.15830)]
+
+- **AgiBot World**: "AgiBot World Colosseo: Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems", *AgiBot, 2025*. [[Paper](https://agibot-world.com/blog/agibot_go1.pdf)] [[Project](https://agibot-world.com/blog/go1)]
+
+- **EnerVerse**: "EnerVerse: Envisioning Embodied Future Space for Robotics Manipulation", *AgiBot, Jan 2025*. [[Paper](https://arxiv.org/abs/2501.01895)]
+
+- **Genie Envisioner**: "Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation", *AgiBot, 2025*. [[Paper](https://arxiv.org/abs/2508.05635)] [[Project](https://genie-envisioner.github.io/)] [[Code](https://github.com/AgibotTech/Genie-Envisioner)]
+
+- **GraspVLA**: "GraspVLA: a Grasping Foundation Model Pre-trained on Billion-scale Synthetic Action Data", *CoRL 2025*. [[Paper](https://arxiv.org/abs/2505.03233)] [[Project](https://pku-epic.github.io/GraspVLA-web/)] [[Code](https://github.com/PKU-EPIC/GraspVLA)]
+
+- **VLA-0**: "VLA-0: Building State-of-the-Art VLAs with Zero Modification", *NVIDIA, 2025*. [[Paper](https://arxiv.org/abs/2510.13054)] [[Project](https://vla0.github.io/)] [[Code](https://github.com/NVlabs/vla0)]
+
+- **ThinkAct**: "ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent Planning", *NVIDIA, NeurIPS 2025*. [[Paper](https://arxiv.org/abs/2507.16815)] [[Project](https://jasper0314-huang.github.io/thinkact-vla/)]
+
+- **OmniVLA**: "OmniVLA: Physically-Grounded Multimodal VLA with Unified Multi-Sensor Perception", *Microsoft Research, 2025*. [[Paper](https://arxiv.org/abs/2511.01210)]
+
+- **V-JEPA 2**: "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning", *Meta, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.09985)] [[Project](https://ai.meta.com/blog/v-jepa-2-world-model-benchmarks/)] [[Code](https://github.com/facebookresearch/vjepa2)]
+
+- **RoboBrain**: "RoboBrain: A Unified Brain Model for Robotic Manipulation from Abstract to Concrete", *CVPR 2025*. [[Paper](https://arxiv.org/abs/2502.21257)] [[Project](https://superrobobrain.github.io/)]
+
+- **DexGraspVLA**: "DexGraspVLA: A Vision-Language-Action Framework Towards General Dexterous Grasping", *PsiBot, 2025*. [[Paper](https://arxiv.org/abs/2502.20900)] [[Project](https://dexgraspvla.github.io/)]
+
+- **Hi Robot**: "Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models", *Physical Intelligence, Feb 2025*. [[Paper](https://arxiv.org/abs/2502.19417)] [[Project](https://www.pi.website/research/hirobot)]
+
+- **Motus**: "Motus: A Unified Latent Action World Model", *arXiv, Dec 2024*. [[Paper](https://arxiv.org/abs/2512.13030)] [[Project](https://motus-robotics.github.io/motus)] [[Code](https://github.com/thu-ml/Motus)]
+
+- **GR-RL**: "GR-RL: Going Dexterous and Precise for Long-Horizon Robotic Manipulation", *ByteDance Seed, Dec 2024*. [[Paper](https://arxiv.org/abs/2512.01801)] [[Project](https://seed.bytedance.com/gr_rl)]
+
+- **StarVLA**: "StarVLA: A Lego-like Codebase for Vision-Language-Action Model Developing", *arXiv, 2025*. [[Report](https://www.overleaf.com/read/qqtwrnprctkf#d5bdce)] [[Code](https://github.com/starVLA/starVLA)]
+
+- **InternVLA-A1**: "InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation", *arXiv, Jan 2026*. [[Paper](https://arxiv.org/abs/2601.02456)] [[Code](https://github.com/InternRobotics/InternVLA-A1)]
+
+- **InternVLA-M1**: "InternVLA-M1: A Spatially Guided Vision-Language-Action Framework for Generalist Robot Policy", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.13778)] [[Project](https://internrobotics.github.io/internvla-m1.github.io/)] [[Code](https://github.com/InternRobotics/InternVLA-M1)]
+
+- **Cosmos Policy**: "Fine-Tuning Video Models for Visuomotor Control and Planning", *ICLR 2026 Submission*.
+  - Finetunes NVIDIA Cosmos Video Foundation Model for action prediction by injecting action chunks into latent tokens.
+
+- **Disentangled Robot Learning**: "Disentangled Robot Learning via Separate Forward and Inverse Dynamics Pretraining", *ICLR 2026 Submission*.
+  - Pretrains separate forward/inverse dynamics models then combines for coupled policy finetuning.
+
+- **XR-1**: "Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations", *ICLR 2026 Submission*.
+  - Introduces Unified Vision-Motion Codes (UVMC) with dual-branch VQ-VAE and shared codebook for human-robot co-pretraining.
+
+- **VLM4VLA**: "Revisiting Vision-Language-Models in Vision-Language-Action Models", *ICLR 2026 Submission*.
+  - Finds that downstream VLA performance has no correlation with VLM performance on standard benchmarks.
+
+- **FLOWER**: "FLOWER: Flow-based VLA for CALVIN Benchmark", *arXiv, 2025*.
+  - State-of-the-art on CALVIN benchmarks using flow-based action generation.
+
+- **EO-1**: "EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for General Robot Control", *arXiv, Aug 2025*. [[Paper](https://arxiv.org/abs/2508.21112)] [[Project](https://eo-robotics.ai/eo-1)] [[Code](https://github.com/eo-robotics/EO-1)]
+
 ### Modular VLAs
 
 > Models that decouple cognition (VLM-based planning) from action (specialized motor modules).
@@ -145,6 +207,24 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **TidyBot**: "TidyBot: Personalized Robot Assistance with Large Language Models", *IROS 2023*. [[Paper](https://arxiv.org/abs/2305.05658)] [[Project](https://tidybot.cs.princeton.edu/)]
 
+- **HybridVLA**: "HybridVLA: Collaborative Diffusion and Autoregression in a Unified Vision-Language-Action Model", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.10631)] [[Project](https://hybrid-vla.github.io/)]
+
+- **CoT-VLA**: "CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models", *CVPR 2025*. [[Paper](https://arxiv.org/abs/2503.22020)] [[Project](https://cot-vla.github.io/)]
+
+- **OpenHelix**: "OpenHelix: A Short Survey, Empirical Analysis, and Open-Source Dual-System VLA Model", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.03912)] [[Project](https://openhelix-robot.github.io/)]
+
+- **OneTwoVLA**: "OneTwoVLA: A Unified Vision-Language-Action Model with Adaptive Reasoning", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.11917)] [[Project](https://one-two-vla.github.io/)]
+
+- **Hume**: "Hume: Introducing System-2 Thinking in Visual-Language-Action Model", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.21432)] [[Project](https://hume-vla.github.io/)]
+
+- **RationalVLA**: "RationalVLA: A Rational Vision-Language-Action Model with Dual System", *arXiv, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.10826)] [[Project](https://irpn-eai.github.io/rational_vla/)]
+
+- **Fast-in-Slow**: "Fast-in-Slow: A Dual-System Foundation Model Unifying Fast Manipulation within Slow Reasoning", *arXiv, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.01953)] [[Project](https://fast-in-slow.github.io/)]
+
+- **TriVLA**: "TriVLA: A Unified Triple-System-Based Unified Vision-Language-Action Model", *arXiv, Jul 2025*. [[Paper](https://arxiv.org/abs/2507.01424)] [[Project](https://zhenyangliu.github.io/TriVLA/)]
+
+- **DualVLA**: "DualVLA: Building a Generalizable Embodied Agent via Partial Decoupling of Reasoning and Action", *arXiv, Nov 2025*. [[Paper](https://arxiv.org/abs/2511.22134)] [[Project](https://costaliya.github.io/DualVLA/)]
+
 ### Compact & Efficient VLAs
 
 > Lightweight VLA models optimized for fast inference and edge deployment.
@@ -159,6 +239,24 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **RT-H**: "RT-H: Action Hierarchies Using Language", *arXiv, Mar 2024*. [[Paper](https://arxiv.org/abs/2403.01823)] [[Project](https://rt-hierarchy.github.io/)]
 
 - **LAPA**: "Latent Action Pretraining from Videos", *arXiv, Oct 2024*. [[Paper](https://arxiv.org/abs/2410.11758)] [[Project](https://latentactionpretraining.github.io/)]
+
+- **BitVLA**: "BitVLA: 1-bit Vision-Language-Action Models for Robotics Manipulation", *arXiv, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.07530)] [[Code](https://github.com/ustcwhy/BitVLA)]
+
+- **MoLe-VLA**: "MoLe-VLA: Dynamic Layer-skipping Vision Language Action Model via Mixture-of-Layers", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.20384)] [[Project](https://sites.google.com/view/mole-vla)]
+
+- **VLA-Cache**: "VLA-Cache: Towards Efficient Vision-Language-Action Model via Adaptive Token Caching", *arXiv, Feb 2025*. [[Paper](https://arxiv.org/abs/2502.02175)]
+
+- **NORA**: "NORA: A Small Open-Sourced Generalist Vision Language Action Model for Embodied Tasks", *arXiv, Apr 2025*. [[Paper](https://arxiv.org/abs/2504.19854)] [[Project](https://declare-lab.github.io/nora)]
+
+- **NORA-1.5**: "NORA-1.5: A Vision-Language-Action Model Trained using World Model and Action-based Preference Rewards", *arXiv, Nov 2025*. [[Paper](https://arxiv.org/abs/2511.14659)] [[Project](https://declare-lab.github.io/nora-1.5)] [[Code](https://github.com/declare-lab/nora-1.5)]
+
+- **CEED-VLA**: "CEED-VLA: Consistency Vision-Language-Action Model with Early-Exit Decoding", *arXiv, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.13725)] [[Project](https://irpn-eai.github.io/CEED-VLA/)]
+
+- **Running VLAs at Real-time Speed**: *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.26742)]
+
+- **Cross-Platform Scaling of VLAs**: "Cross-Platform Scaling of Vision-Language-Action Models from Edge to Cloud GPUs", *arXiv, Sep 2025*. [[Paper](https://arxiv.org/abs/2509.11480)]
+
+- **VLA-Adapter**: "VLA-Adapter: An Effective Paradigm for Tiny-Scale Vision-Language-Action Model", *arXiv, Sep 2025*. [[Paper](https://arxiv.org/abs/2509.09372)] [[Project](https://vla-adapter.github.io/)]
 
 ---
 
@@ -179,6 +277,29 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
   - Introduced Action Chunking with Transformers for smooth bimanual manipulation.
 
 - **Behavior Transformers**: "Behavior Transformers: Cloning k Modes with One Stone", *NeurIPS 2022*. [[Paper](https://arxiv.org/abs/2206.11251)] [[Code](https://github.com/notmahi/bet)]
+
+- **FASTer**: "FASTer: Toward Powerful and Efficient Autoregressive VLAs with Learnable Action Tokenizer and Block-Wise Decoding", *ICLR 2026 Submission*.
+  - Combines Residual Vector Quantization (RVQ) with DCT frequency loss for higher compression than FAST.
+
+- **OmniSAT**: "OmniSAT: Compact Action Token, Faster Autoregression for Vision-Language-Action Models", *ICLR 2026 Submission*.
+  - Uses B-Spline based encoder for compact action representation with VQ-VAE tokenization.
+
+- **VQ-VLA**: "VQ-VLA: Improving Vision-Language-Action Models via Scaling Vector-Quantized Action Tokenizers", *ICCV 2025*. [[Paper](https://arxiv.org/abs/2507.01016)] [[Project](https://xiaoxiao0406.github.io/vqvla.github.io)]
+
+### Discrete Diffusion VLAs
+
+> Models using discrete diffusion for parallel action token generation instead of autoregressive decoding.
+
+- **Discrete Diffusion VLA**: "Bringing Discrete Diffusion to Action Decoding in Vision-Language-Action Policies", *arXiv, Aug 2025*. [[Paper](https://arxiv.org/abs/2508.20072)]
+  - Applies discrete diffusion to OpenVLA for fast action chunk generation with adaptive decoding.
+
+- **dVLA**: "Diffusion Vision-Language-Action Model with Multimodal Chain-of-Thought", *ICLR 2026 Submission*.
+  - Combines discrete diffusion with ECoT for parallel sampling of future frames, text, and actions.
+
+- **DIVA**: "Discrete Diffusion Vision-Language-Action Models for Parallelized Action Generation", *ICLR 2026 Submission*.
+  - Focuses on token substitution strategies during inference for improved performance.
+
+- **LLaDA-VLA**: "Vision Language Diffusion Action Models", *arXiv, Sep 2025*. [[Paper](https://arxiv.org/abs/2506.14932)] [[Project](https://wenyuqing.github.io/llada-vla/)]
 
 ### Continuous & Diffusion Policies
 
@@ -206,6 +327,53 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **Consistency Policy**: "Consistency Policy: Accelerated Visuomotor Policies via Consistency Distillation", *RSS 2024*. [[Paper](https://arxiv.org/abs/2405.07503)] [[Project](https://consistency-policy.github.io/)]
   - Distills diffusion policies into single-step models for 10x faster inference.
+
+- **Dita**: "Dita: Scaling Diffusion Transformer for Generalist Vision-Language-Action Policy", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2410.15959v4)] [[Project](https://robodita.github.io/)]
+
+- **Real-Time Chunking**: "Real-Time Execution of Action Chunking Flow Policies", *Physical Intelligence, NeurIPS 2025*. [[Paper](https://arxiv.org/abs/2506.07339)] [[Project](https://www.pi.website/research/real_time_chunking)]
+
+- **ManiFlow**: "ManiFlow: A General Robot Manipulation Policy via Consistency Flow Training", *CoRL 2025*. [[Paper](https://arxiv.org/abs/2509.01819)] [[Project](https://maniflow-policy.github.io/)] [[Code](https://github.com/geyan21/ManiFlow_Policy)]
+
+- **Unified Video Action Model**: "Unified Video Action Model", *RSS 2025*. [[Paper](https://arxiv.org/abs/2503.00200)] [[Project](https://unified-video-action-model.github.io/)]
+
+- **Streaming Flow Policy**: "Streaming Flow Policy: Simplifying diffusion/flow-matching policies", *CoRL 2025 Oral*. [[Paper](https://arxiv.org/abs/2505.21851)] [[Project](https://siddancha.github.io/streaming-flow-policy/)]
+
+- **FlowPolicy**: "FlowPolicy: Enabling Fast and Robust 3D Flow-Based Policy", *AAAI 2025*. [[Paper](https://arxiv.org/abs/2412.04987)] [[Code](https://github.com/zql-kk/FlowPolicy)]
+
+- **MoDE**: "Efficient Diffusion Transformer Policies with Mixture of Expert Denoisers", *ICLR 2025*. [[Paper](https://arxiv.org/abs/2412.12953)] [[Project](https://mbreuss.github.io/MoDE_Diffusion_Policy/)]
+
+- **Reactive Diffusion Policy**: "Reactive Diffusion Policy: Slow-Fast Visual-Tactile Policy Learning", *RSS 2025*. [[Paper](https://arxiv.org/abs/2503.02881)] [[Project](https://reactive-diffusion-policy.github.io/)]
+
+- **VITA**: "VITA: Vision-To-Action Flow Matching Policy", *arXiv, Jul 2025*. [[Paper](https://arxiv.org/abs/2507.13231)] [[Project](https://ucd-dare.github.io/VITA/)]
+
+- **Chain-of-Action**: "Chain-of-Action: Trajectory Autoregressive Modeling for Robotic Manipulation", *ByteDance Seed, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.09990)] [[Project](https://chain-of-action.github.io/)]
+
+- **Hierarchical Diffusion Policy**: "Hierarchical Diffusion Policy: Manipulation Trajectory Generation Via Contact Guidance", *TRO 2025*. [[Paper](https://arxiv.org/abs/2411.12982)] [[Code](https://github.com/dexin-wang/Hierarchical-Diffusion-Policy)]
+
+- **Adapt3R**: "Adapt3R: Adaptive 3D Scene Representation for Domain Transfer in Imitation Learning", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.04877)] [[Project](https://www.pair.toronto.edu/Adapt3R/)]
+
+- **3D FlowMatch Actor**: "3D FlowMatch Actor: Unified 3D Policy for Single and Dual-Arm Manipulation", *arXiv, Aug 2025*. [[Paper](https://arxiv.org/abs/2508.11002)] [[Project](https://3d-flowmatch-actor.github.io/)] [[Code](https://github.com/nickgkan/3d_flowmatch_actor)]
+
+- **CLAM**: "CLAM: Continuous Latent Action Models for Robot Learning from Unlabeled Demonstrations", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.04999)] [[Project](https://clamrobot.github.io/)]
+
+- **H3DP**: "H3DP: Triply-Hierarchical Diffusion Policy for Visuomotor Learning", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.07819)] [[Project](https://lyy-iiis.github.io/h3dp/)]
+
+- **UniSkill**: "UniSkill: Imitating Human Videos via Cross-Embodiment Skill Representations", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.08787)] [[Project](https://kimhanjung.github.io/UniSkill/)]
+
+- **Latent Action Diffusion**: "Latent Action Diffusion for Cross-Embodiment Manipulation", *arXiv, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.14608)] [[Project](https://mimicrobotics.github.io/lad/)]
+
+- **Dex1B**: "Dex1B: Learning with 1B Demonstrations for Dexterous Manipulation", *RSS 2025*. [[Paper](https://arxiv.org/abs/2506.17198)] [[Project](https://jianglongye.com/dex1b/)]
+
+- **DemoDiffusion**: "DemoDiffusion: One-Shot Human Imitation using pre-trained Diffusion Policy", *arXiv, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.20668)] [[Project](https://demodiffusion.github.io/)]
+
+- **One-Step Diffusion Policy**: "One-Step Diffusion Policy: Fast Visuomotor Policies via Diffusion Distillation", *arXiv, Oct 2024*. [[Paper](https://arxiv.org/abs/2410.21257)]
+
+- **GauDP**: "GauDP: Reinventing Multi-Agent Collaboration through Gaussian-Image Synergy in Diffusion Policies", *NeurIPS 2025*. [[Paper](https://arxiv.org/abs/2511.00998)] [[Project](https://ziyeeee.github.io/gaudp.io/)]
+
+- **DiWA**: "DiWA: Diffusion Policy Adaptation with World Models", *CoRL 2025*. [[Paper](https://arxiv.org/abs/2508.03645)] [[Project](https://diwa.cs.uni-freiburg.de/)] [[Code](https://github.com/acl21/diwa)]
+
+- **GPC**: "Compose Your Policies! Improving Diffusion-based or Flow-based Robot Policies via Test-time Distribution-level Composition", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.01068)] [[Project](https://sagecao1125.github.io/GPC-Site/)] [[Code](https://github.com/SageCao1125/GPC)]
+  - Composes multiple flow/diffusion policies at test time using convex optimization for improved performance.
 
 ---
 
@@ -313,6 +481,34 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **RoboReflect**: "RoboReflect: Reflective Reasoning for Robot Manipulation", *arXiv, 2025*. [[Paper](https://arxiv.org/abs/2505.XXXXX)]
 
+- **Cosmos-Reason1**: "Cosmos-Reason1: From Physical Common Sense To Embodied Reasoning", *NVIDIA, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.15558)] [[Code](https://github.com/nvidia-cosmos/cosmos-reason1)]
+
+- **EmbodiedVSR**: "EmbodiedVSR: Dynamic Scene Graph-Guided Chain-of-Thought Reasoning for Visual Spatial Tasks", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.11089)]
+
+- **Reflective Planning**: "Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon Robotic Manipulation", *arXiv, Feb 2025*. [[Paper](https://arxiv.org/abs/2502.16707)]
+
+- **Embodied-Reasoner**: "Embodied-Reasoner: Synergizing Visual Search, Reasoning, and Action for Embodied Interactive Tasks", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.21696)] [[Project](https://embodied-reasoner.github.io/)]
+
+- **Embodied-R**: "Embodied-R: Collaborative Framework for Activating Embodied Spatial Reasoning via Reinforcement Learning", *arXiv, Apr 2025*. [[Paper](https://arxiv.org/abs/2504.12680)] [[Project](https://embodiedcity.github.io/Embodied-R/)]
+
+- **RoBridge**: "RoBridge: A Hierarchical Architecture Bridging Cognition and Execution for General Robotic Manipulation", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.01709)] [[Project](https://abliao.github.io/RoBridge/)]
+
+- **Visual Embodied Brain**: "Visual Embodied Brain: Let Multimodal Large Language Models See, Think, and Control in Spaces", *arXiv, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.00123)] [[Code](https://github.com/OpenGVLab/VeBrain)]
+
+- **From Seeing to Doing**: "From Seeing to Doing: Bridging Reasoning and Decision for Robotic Manipulation", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.08548)] [[Project](https://embodied-fsd.github.io/)]
+
+- **Actions as Language**: "Fine-Tuning VLMs into VLAs Without Catastrophic Forgetting", *ICLR 2026 Submission*.
+  - Relabels robot datasets with subtasks and text-based actions to bridge the domain gap without forgetting VLM capabilities.
+
+- **InstructVLA**: "Vision-Language-Action Instruction Tuning: From Understanding to Manipulation", *arXiv, Jul 2025*. [[Paper](https://arxiv.org/abs/2507.17520)] [[Project](https://yangs03.github.io/InstructVLA_Home/)]
+  - Two-stage pipeline with action expert and MoE-adapted VLM for instruction-following.
+
+- **Hybrid ECoT Training**: "Hybrid Training for Vision-Language-Action Models", *ICLR 2026 Submission*.
+  - Decomposes ECoT pretraining into think/act/follow subtasks for faster inference with performance benefits.
+
+- **HAMLET**: "Switch Your Vision-Language-Action Model into a History-Aware Policy", *ICLR 2026 Submission*.
+  - Introduces plug-and-play memory module with moment tokens for temporal aggregation.
+
 ### Error Detection & Recovery
 
 > Methods for detecting failures and correcting robot actions in real-time.
@@ -352,6 +548,22 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **BOSS**: "Bootstrap Your Own Skills: Learning to Solve New Tasks with LLM Guidance", *CoRL 2023*. [[Paper](https://arxiv.org/abs/2310.10021)] [[Project](https://clvrai.github.io/boss/)]
 
+- **Phantom**: "Phantom: Training Robots Without Robots Using Only Human Videos", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.00779)] [[Project](https://phantom-human-videos.github.io/)]
+
+- **ZeroMimic**: "ZeroMimic: Distilling Robotic Manipulation Skills from Web Videos", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.23877)] [[Project](https://zeromimic.github.io/)]
+
+- **Human2Robot**: "Human2Robot: Learning Robot Actions from Paired Human-Robot Videos", *arXiv, Feb 2025*. [[Paper](https://arxiv.org/abs/2502.16587)]
+
+- **One-Shot Dual-Arm Imitation Learning**: *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.06831)] [[Project](https://www.robot-learning.uk/one-shot-dual-arm)]
+
+- **DataMIL**: "DataMIL: Selecting Data for Robot Imitation Learning with Datamodels", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.09603)] [[Project](https://robin-lab.cs.utexas.edu/datamodels4imitation/)]
+
+- **In-Context Imitation Learning**: "In-Context Imitation Learning via Next-Token Prediction", *arXiv, Aug 2024*. [[Paper](https://arxiv.org/abs/2408.15980)] [[Project](https://icrt.dev/)]
+
+- **RILe**: "RILe: Reinforced Imitation Learning", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2406.08472)]
+
+- **CLASS**: "CLASS: Contrastive Learning via Action Sequence Supervision for Robot Manipulation", *CoRL 2025*. [[Paper](https://arxiv.org/abs/2508.01600)] [[Project](https://class-robot.github.io/)] [[Code](https://github.com/sean1295/CLASS)]
+
 ### Reinforcement Learning
 
 > RL-based methods for optimizing VLA policies.
@@ -375,6 +587,30 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **TPO**: "TPO: Trajectory-wise Preference Optimization for VLAs", *arXiv, 2025*. [[Paper](https://arxiv.org/abs/2505.XXXXX)]
 
 - **ReinboT**: "ReinboT: Reinforcement Learning for Robotic Manipulation", *arXiv, 2025*. [[Paper](https://arxiv.org/abs/2505.XXXXX)]
+
+- **VLA-RL**: "VLA-RL: Towards Masterful and General Robotic Manipulation with Scalable RL", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.18719)] [[Code](https://github.com/GuanxingLu/vlarl)]
+
+- **SimpleVLA-RL**: "SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning", *arXiv, Sep 2025*. [[Paper](https://arxiv.org/abs/2509.09674)] [[Code](https://github.com/PRIME-RL/SimpleVLA-RL)]
+
+- **ConRFT**: "ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy", *RSS 2025*. [[Paper](https://arxiv.org/abs/2502.05450)] [[Project](https://cccedric.github.io/conrft/)]
+
+- **VLA-RFT**: "VLA-RFT: Vision-Language-Action Reinforcement Fine-tuning with Verified Rewards", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.00406)] [[Project](https://vla-rft.github.io/)] [[Code](https://github.com/OpenHelix-Team/VLA-RFT)]
+
+- **RLinf-VLA**: "RLinf-VLA: A Unified and Efficient Framework for VLA+RL Training", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.06710)] [[Code](https://github.com/RLinf/RLinf)]
+
+- **RoboMonkey**: "RoboMonkey: Scaling Test-Time Sampling and Verification for Vision-Language-Action Models", *CoRL 2025*. [[Paper](https://arxiv.org/abs/2506.17811)] [[Project](https://robomonkey-vla.github.io/)] [[Code](https://github.com/robomonkey-vla/RoboMonkey)]
+
+- **Embodied-R1**: "Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation", *arXiv, Aug 2025*. [[Paper](https://arxiv.org/abs/2508.13998)] [[Project](https://embodied-r1.github.io/)] [[Code](https://github.com/pickxiguapi/Embodied-R1)]
+
+- **VLA-Reasoner**: "VLA-Reasoner: Empowering Vision-Language-Action Models with Reasoning via Online Monte Carlo Tree Search", *arXiv, Sep 2025*. [[Paper](https://arxiv.org/abs/2509.22643)]
+
+- **Residual RL for VLAs**: "Self-Improving Vision-Language-Action Models with Data Generation via Residual RL", *ICLR 2026 Submission*.
+  - Collects data with frozen VLA + residual policy for recovery behavior, then SFT finetunes VLA.
+
+- **STA-PPO/TPO**: "Progressive Stage-Aware Reinforcement for Fine-Tuning Vision-Language-Action Models", *ICLR 2026 Submission*.
+  - Breaks tasks into semantic stages (Reach→Grasp→Transport→Place) with stage-level rewards.
+
+- **Verifier-free Test-Time Sampling**: "Verifier-free Test-Time Sampling for Vision Language Action Models", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.05681)]
 
 ### Reward Design
 
@@ -426,6 +662,14 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **RoboAgent**: "RoboAgent: Generalization and Efficiency via Semantic Augmentations", *ICRA 2024*. [[Paper](https://arxiv.org/abs/2309.01918)] [[Project](https://robopen.github.io/)]
 
+- **X-VLA**: "Soft-Prompted Transformer as Scalable Cross-Embodiment Vision-Language-Action Model", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.10274)] [[Project](https://thu-air-dream.github.io/X-VLA/)] [[Code](https://github.com/2toinf/X-VLA)]
+  - Uses learnable soft-prompt tokens for different datasets/embodiments with insightful scaling analysis.
+
+- **HiMoE-VLA**: "Hierarchical Mixture-of-Experts for Generalist Vision-Language-Action Policies", *arXiv, Dec 2025*. [[Paper](https://arxiv.org/abs/2512.05693)] [[Code](https://github.com/ZhiyingDu/HiMoE-VLA)]
+  - Uses hierarchical MoE blocks (Action-Space MoEs + Heterogeneity Balancing MoEs) for cross-embodiment.
+
+- **D2E**: "Scaling Vision-Action Pretraining on Desktop Data for Transfer to Embodied AI", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.05684)] [[Project](https://worv-ai.github.io/d2e/)] [[Code](https://github.com/worv-ai/D2E)]
+
 ### Open-Vocabulary Generalization
 
 > Models that generalize to novel visual appearances and semantic concepts.
@@ -462,6 +706,16 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **QuaRT-VLA**: "Quantized Robotics Transformers for Vision-Language-Action Models", *arXiv, 2025*. [[Paper](https://arxiv.org/abs/2505.XXXXX)]
 
 - **PDVLA**: "PDVLA: Parallel Decoding for Vision-Language-Action Models", *arXiv, 2025*. [[Paper](https://arxiv.org/abs/2505.XXXXX)]
+
+- **HyperVLA**: "Efficient Inference in Vision-Language-Action Models via Hypernetworks", *ICLR 2026 Submission*.
+  - Uses hypernetworks to generate compact task-specific policies, dramatically reducing inference cost.
+
+- **AutoQVLA**: "Not All Channels Are Equal in Vision-Language-Action Model's Quantization", *ICLR 2026 Submission*.
+  - Proposes improved quantization achieving 30% VRAM reduction while maintaining OpenVLA performance.
+
+- **SpecPrune-VLA**: "Accelerating Vision-Language-Action Models via Action-Aware Self-Speculative Pruning", *arXiv, Sep 2025*. [[Paper](https://arxiv.org/abs/2509.05614)]
+
+- **RLRC**: "Reinforcement Learning-based Recovery for Compressed Vision-Language-Action Models", *arXiv, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.17639)] [[Project](https://rlrc-vla.github.io/)]
 
 ### Real-Time Control
 
@@ -582,6 +836,84 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **ThinkBot**: "ThinkBot: Embodied Instruction Following with Thought Chain Reasoning", *arXiv, Dec 2023*. [[Paper](https://arxiv.org/abs/2312.07062)]
 
+- **ApexNav**: "ApexNav: An Adaptive Exploration Strategy for Zero-Shot Object Navigation", *RA-L 2025*. [[Paper](https://arxiv.org/abs/2504.14478)] [[Project](https://robotics-star.com/ApexNav)]
+
+- **LOVON**: "LOVON: Legged Open-Vocabulary Object Navigator", *arXiv, Jul 2025*. [[Paper](https://arxiv.org/abs/2507.06747)] [[Project](https://daojiepeng.github.io/LOVON/)]
+
+- **Multimodal Spatial Language Maps**: "Multimodal Spatial Language Maps for Robot Navigation and Manipulation", *IJRR 2025*. [[Paper](https://arxiv.org/abs/2506.06862)] [[Project](https://mslmaps.github.io/)]
+
+- **Learned Perceptive Forward Dynamics Model**: "Learned Perceptive Forward Dynamics Model for Safe and Platform-aware Robotic Navigation", *arXiv, Apr 2025*. [[Paper](https://arxiv.org/abs/2504.19322)] [[Code](https://github.com/leggedrobotics/fdm)]
+
+- **VL-Nav**: "VL-Nav: Real-time Vision-Language Navigation with Spatial Reasoning", *arXiv, Feb 2025*. [[Paper](https://arxiv.org/abs/2502.00931)]
+
+- **TRAVEL**: "TRAVEL: Training-Free Retrieval and Alignment for Vision-and-Language Navigation", *arXiv, Feb 2025*. [[Paper](https://arxiv.org/abs/2502.07306)]
+
+- **VR-Robo**: "VR-Robo: A Real-to-Sim-to-Real Framework for Visual Robot Navigation and Locomotion", *arXiv, Feb 2025*. [[Paper](https://arxiv.org/abs/2502.01536)]
+
+- **NavigateDiff**: "NavigateDiff: Visual Predictors are Zero-Shot Navigation Assistants", *arXiv, Feb 2025*. [[Paper](https://arxiv.org/abs/2502.13894)]
+
+- **MapNav**: "MapNav: A Novel Memory Representation via Annotated Semantic Maps for VLM-based VLN", *arXiv, Feb 2025*. [[Paper](https://arxiv.org/abs/2502.13451)]
+
+- **OpenFly**: "OpenFly: A Versatile Toolchain and Large-scale Benchmark for Aerial Vision-Language Navigation", *arXiv, Feb 2025*. [[Paper](https://arxiv.org/abs/2502.18041)]
+
+- **WMNav**: "WMNav: Integrating Vision-Language Models into World Models for Object Goal Navigation", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.02247)] [[Project](https://b0b8k1ng.github.io/WMNav/)]
+
+- **SmartWay**: "SmartWay: Enhanced Waypoint Prediction and Backtracking for Zero-Shot Vision-and-Language Navigation", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.10069)]
+
+- **UniGoal**: "UniGoal: Towards Universal Zero-shot Goal-oriented Navigation", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.10630)] [[Project](https://bagh2178.github.io/UniGoal/)]
+
+- **P3Nav**: "P3Nav: A Unified Framework for Embodied Navigation Integrating Perception, Planning, and Prediction", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.18525)]
+
+- **ForesightNav**: "ForesightNav: Learning Scene Imagination for Efficient Exploration", *arXiv, Apr 2025*. [[Paper](https://arxiv.org/abs/2504.16062)] [[Code](https://github.com/uzh-rpg/foresight-nav)]
+
+- **CityNavAgent**: "CityNavAgent: Aerial Vision-and-Language Navigation with Hierarchical Semantic Planning", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.05622)] [[Code](https://github.com/VinceOuti/CityNavAgent)]
+
+- **NavDP**: "NavDP: Learning Sim-to-Real Navigation Diffusion Policy with Privileged Information Guidance", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.08712)]
+
+- **OctoNav**: "OctoNav: Towards Generalist Embodied Navigation", *arXiv, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.09839)] [[Project](https://buaa-colalab.github.io/OctoNav/)]
+
+- **BeliefMapNav**: "BeliefMapNav: 3D Voxel-Based Belief Map for Zero-Shot Object Navigation", *arXiv, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.06487)] [[Code](https://github.com/ZiboKNOW/BeliefMapNav)]
+
+- **TopV-Nav**: "TopV-Nav: Unlocking the Top-View Spatial Reasoning Potential of MLLM for Zero-shot Object Navigation", *arXiv, Nov 2024*. [[Paper](https://arxiv.org/abs/2411.16425)]
+
+- **CorrectNav**: "CorrectNav: Self-Correction Flywheel Empowers Vision-Language-Action Navigation Model", *arXiv, Aug 2025*. [[Paper](https://arxiv.org/abs/2508.10416)] [[Project](https://correctnav.github.io/)]
+
+- **GC-VLN**: "GC-VLN: Instruction as Graph Constraints for Training-free Vision-and-Language Navigation", *CoRL 2025*. [[Paper](https://arxiv.org/abs/2509.10454)] [[Project](https://bagh2178.github.io/GC-VLN/)] [[Code](https://github.com/bagh2178/GC-VLN)]
+
+- **NavFoM**: "Embodied Navigation Foundation Model", *arXiv, Sep 2025*. [[Paper](https://arxiv.org/abs/2509.12129)] [[Project](https://pku-epic.github.io/NavFoM-Web/)]
+
+- **Search-TTA**: "Search-TTA: A Multimodal Test-Time Adaptation Framework for Visual Search in the Wild", *CoRL 2025*. [[Paper](https://arxiv.org/abs/2505.11350)] [[Project](https://search-tta.github.io/)] [[Code](https://github.com/marmotlab/Search-TTA-VLN)]
+
+- **JanusVLN**: "JanusVLN: Decoupling Semantics and Spatiality with Dual Implicit Memory for Vision-Language Navigation", *arXiv, Sep 2025*. [[Paper](https://arxiv.org/abs/2509.22548)] [[Project](https://miv-xjtu.github.io/JanusVLN.github.io/)] [[Code](https://github.com/MIV-XJTU/JanusVLN)]
+
+- **TrackVLA++**: "TrackVLA++: Unleashing Reasoning and Memory Capabilities in VLA Models for Embodied Visual Tracking", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.07134)] [[Project](https://pku-epic.github.io/TrackVLA-plus-plus-Web/)]
+
+- **InternNav**: "Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation", *arXiv, Dec 2025*. [[Paper](https://arxiv.org/abs/2512.08186)] [[Project](https://internrobotics.github.io/internvla-n1-dualvln.github.io/)] [[Code](https://github.com/InternRobotics/InternNav)]
+
+- **OmniVLA-Nav**: "OmniVLA: An Omni-Modal Vision-Language-Action Model for Robot Navigation", *arXiv, Sep 2025*. [[Paper](https://arxiv.org/abs/2509.19480)] [[Project](https://omnivla-nav.github.io/)] [[Code](https://github.com/NHirose/OmniVLA)]
+
+---
+
+## Sim-to-Real Transfer
+
+> Methods for bridging simulation-trained policies to real-world deployment.
+
+- **RE3SIM**: "RE3SIM: Generating High-Fidelity Simulation Data via 3D-Photorealistic Real-to-Sim for Robotic Manipulation", *arXiv, Feb 2025*. [[Paper](https://arxiv.org/abs/2502.08645)]
+
+- **Real-to-Sim-to-Real with VLM-Generated Rewards**: "A Real-to-Sim-to-Real Approach to Robotic Manipulation with VLM-Generated Iterative Keypoint Rewards", *arXiv, Feb 2025*. [[Paper](https://arxiv.org/abs/2502.08643)]
+
+- **Distributional Real2Sim2Real**: "A Distributional Treatment of Real2Sim2Real for Vision-Driven Deformable Linear Object Manipulation", *arXiv, Feb 2025*. [[Paper](https://arxiv.org/abs/2502.18615)]
+
+- **Sim-to-Real for Vision-Based Dexterous Manipulation on Humanoids**: "Sim-to-Real Reinforcement Learning for Vision-Based Dexterous Manipulation on Humanoids", *arXiv, Feb 2025*. [[Paper](https://arxiv.org/abs/2502.20396)] [[Project](https://toruowo.github.io/recipe/)]
+
+- **Impact of Static Friction on Sim2Real**: "Impact of Static Friction on Sim2Real in Robotic Reinforcement Learning", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.01255)]
+
+- **Few-shot Sim2Real**: "Few-shot Sim2Real Based on High Fidelity Rendering with Force Feedback Teleop", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.01301)]
+
+- **RSR Loop Framework**: "An Real-Sim-Real (RSR) Loop Framework for Generalizable Robotic Policy Transfer with Differentiable Simulation", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.10118)] [[Code](https://github.com/sunnyshi0310/RSR-MJX)]
+
+- **Real2Render2Real**: "Real2Render2Real: Scaling Robot Data Without Dynamics Simulation or Robot Hardware", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.09601)] [[Project](https://real2render2real.com/)]
+
 ---
 
 ## Resources
@@ -605,6 +937,25 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 | ALFRED | VLN + manipulation | Instruction following | [Paper](https://arxiv.org/abs/1912.01734) · [Project](https://askforalfred.com/) |
 | GenSim / GenSim2 | Procedural | Task generation | [Paper](https://arxiv.org/abs/2310.01361) · [Project](https://gen-sim.github.io/) |
 | MineDojo | Minecraft | Open-world learning | [Paper](https://arxiv.org/abs/2206.08853) · [Project](https://minedojo.org/) |
+| RoboTwin 2.0 | Bimanual manipulation | Domain randomization | [Paper](https://arxiv.org/abs/2506.18088) · [Project](https://robotwin-platform.github.io/) |
+| RoboArena | Distributed evaluation | Real-world benchmark | [Paper](https://arxiv.org/abs/2506.18123) · [Project](https://robo-arena.github.io/) |
+| RoboCerebra | Long-horizon | Manipulation evaluation | [Paper](https://arxiv.org/abs/2506.06677) · [Project](https://robocerebra.github.io/) |
+| DivScene | Diverse scenes | Object navigation | [Paper](https://arxiv.org/abs/2410.02730) · [Project](https://zhaowei-wang-nlp.github.io/divscene-project-page/) |
+| EWMBench | World model evaluation | Scene, motion, semantic | [Paper](https://arxiv.org/abs/2505.09694) · [Code](https://github.com/AgibotTech/EWMBench) |
+| ManipBench | VLM evaluation | Low-level manipulation | [Paper](https://arxiv.org/abs/2505.09698) · [Project](https://manipbench.github.io/) |
+| RoboTwin | CVPR 2025 | Dual-arm benchmark | [Paper](https://arxiv.org/abs/2409.02920) · [Code](https://github.com/TianxingChen/RoboTwin) |
+| RoboVerse | Unified platform | Scalable robot learning | [Paper](https://roboverseorg.github.io/static/pdfs/paper_supp_20250405_1820.pdf) · [Code](https://github.com/RoboVerseOrg/RoboVerse) |
+| AutoEval | Autonomous evaluation | Real-world manipulation | [Paper](https://arxiv.org/abs/2503.24278) · [Project](https://auto-eval.github.io/) |
+| RoboFactory | Multi-robot collaboration | Compositional tasks | [Paper](https://arxiv.org/abs/2503.16408) · [Project](https://iranqin.github.io/robofactory/) |
+| BOSS | Observation shift | Long-horizon tasks | [Paper](https://arxiv.org/abs/2502.15679) |
+| OpenBench | Smart logistics | Semantic navigation | [Paper](https://arxiv.org/abs/2502.09238) |
+| EmbSpatial-Bench | Spatial understanding | Embodied tasks | [Paper](https://arxiv.org/abs/2406.05756) |
+| Diverse Behaviors Benchmark | Human demonstrations | Imitation learning | [Paper](https://arxiv.org/abs/2402.14606) |
+| RoboArena | Zero-shot evaluation | Real-world generalization | [Project](https://robo-arena.github.io/) |
+| RobotArena ∞ | Real-to-sim | Automatic evaluation | ICLR 2026 Submission |
+| RoboCasa365 | 365 tasks, 2k+ scenes | Kitchen manipulation | ICLR 2026 Submission |
+| WorldGym | World model evaluation | Policy evaluation | ICLR 2026 Submission |
+| ManipulationNet | Zero-shot benchmark | Fair comparison | [Project](https://manipulation-net.github.io/) |
 
 ### Simulation Platforms
 
@@ -613,13 +964,17 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 | ManiSkill3 | GPU-parallelized robotics | [Paper](https://arxiv.org/abs/2410.00425) · [Project](https://www.maniskill.ai/) |
 | Genesis | Differentiable physics | [Project](https://genesis-embodied-ai.github.io/) |
 | Isaac Lab / Isaac Sim | NVIDIA robotics simulation | [Project](https://developer.nvidia.com/isaac-sim) |
-| MuJoCo Playground | Browser-based MuJoCo | [Project](https://playground.mujoco.org/) |
+| MuJoCo Playground | Browser-based MuJoCo | [Paper](https://arxiv.org/abs/2502.08844) · [Project](https://playground.mujoco.org/) |
 | OmniGibson | High-fidelity home simulation | [Paper](https://arxiv.org/abs/2311.01014) · [Project](https://behavior.stanford.edu/omnigibson/) |
 | Habitat 2.0 | Navigation & rearrangement | [Paper](https://arxiv.org/abs/2106.14405) · [Project](https://aihabitat.org/) |
 | BEHAVIOR-1K | 1,000 everyday activities | [Paper](https://arxiv.org/abs/2403.09227) · [Project](https://behavior.stanford.edu/) |
 | iGibson | Interactive environments | [Paper](https://arxiv.org/abs/2012.02924) · [Project](https://svl.stanford.edu/igibson/) |
 | RoboSuite | Modular manipulation | [Paper](https://arxiv.org/abs/2009.12293) · [Project](https://robosuite.ai/) |
 | PyBullet | Lightweight physics for RL | [Project](https://pybullet.org/) |
+| DexGarmentLab | Garment manipulation | [Paper](https://arxiv.org/abs/2505.11032) · [Project](https://wayrise.github.io/DexGarmentLab/) |
+| MuBlE | Task planning benchmark | [Paper](https://arxiv.org/abs/2503.02834) · [Code](https://github.com/michaal94/MuBlE) |
+| LocoMuJoCo | Locomotion benchmark | [Docs](https://loco-mujoco.readthedocs.io/) · [Code](https://github.com/robfiras/loco-mujoco) |
+| BEHAVIOR Robot Suite | Whole-body manipulation | [Paper](https://arxiv.org/abs/2503.05652) · [Project](https://behavior-robot-suite.github.io/) |
 
 ---
 
@@ -627,14 +982,41 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 | Survey | Venue | Links |
 |--------|-------|-------|
-| Foundation Models in Robotics | IJRR 2024 | [Paper](https://arxiv.org/abs/2312.07843) · [GitHub](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models) |
+| Foundation Models in Robotics | IJRR 2025 | [Paper](https://arxiv.org/abs/2312.07843) · [GitHub](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models) |
+| A Review of Learning-based Dynamics Models for Robotic Manipulation | Science Robotics 2025 | [Paper](https://albertboai.com/assets/pdf/2025_scirobotics.adt1497.pdf) |
+| An Anatomy of VLA Models: From Modules to Milestones | arXiv 2025 | [Paper](https://arxiv.org/abs/2512.11362) · [Project](https://suyuz1.github.io/Survery/) |
+| A Comprehensive Survey on World Models for Embodied AI | arXiv 2025 | [Paper](https://arxiv.org/abs/2510.16732) · [GitHub](https://github.com/Li-Zn-H/AwesomeWorldModels) |
+| VLA Models for Robotics: Real-World Applications | arXiv 2025 | [Paper](https://arxiv.org/abs/2510.07077) |
+| Pure VLA Models: A Comprehensive Survey | arXiv 2025 | [Paper](https://arxiv.org/abs/2509.19012) |
+| Large VLM-based VLA for Robotic Manipulation | arXiv 2025 | [Paper](https://arxiv.org/abs/2508.13073) · [GitHub](https://github.com/JiuTian-VL/Large-VLM-based-VLA-for-Robotic-Manipulation) |
+| Large Model Empowered Embodied AI: Decision-Making | arXiv 2025 | [Paper](https://arxiv.org/abs/2508.10399) |
+| Foundation Model Driven Robotics | arXiv 2025 | [Paper](https://arxiv.org/abs/2507.10087) |
+| VLA Survey: An Action Tokenization Perspective | PKU-PsiBot 2025 | [Paper](https://arxiv.org/abs/2507.01925) |
+| VLA Models for Autonomous Driving | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.24044) · [GitHub](https://github.com/JohnsonJiang1996/Awesome-VLA4AD) |
+| VLA Post-Training and Human Motor Learning | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.20966) · [GitHub](https://github.com/AoqunJin/Awesome-VLA-Post-Training) |
+| Deep RL for Robotics: Real-World Successes | arXiv 2025 | [Paper](https://arxiv.org/abs/2408.03539) |
+| Survey on Diffusion Policy for Robotic Manipulation | TechRxiv 2025 | [Paper](https://doi.org/10.36227/techrxiv.174378343.39356214/v1) · [GitHub](https://github.com/HITSZ-Robotics/DiffusionPolicy-Robotics) |
+| Embodied Intelligent Industrial Robotics | arXiv 2025 | [Paper](https://arxiv.org/abs/2505.09305) · [GitHub](https://github.com/jackeyzengl/Embodied_Intelligent_Industrial_Robotics_Paper_List) |
+| Neural Brain: Framework for Embodied Agents | arXiv 2025 | [Paper](https://arxiv.org/abs/2505.07634) · [GitHub](https://github.com/CNJianLiu/Neural-Brain-for-Embodied-Agents) |
+| VLA Models: Concepts, Progress, Applications | arXiv 2025 | [Paper](https://arxiv.org/abs/2505.04769) |
+| Robotic Navigation with Physics Simulators | arXiv 2025 | [Paper](https://arxiv.org/abs/2505.01458) |
+| Multimodal Perception for Goal-oriented Navigation | arXiv 2025 | [Paper](https://arxiv.org/abs/2504.15643) |
+| Diffusion Models for Robotic Manipulation | arXiv 2025 | [Paper](https://arxiv.org/abs/2504.08438) |
+| Dexterous Manipulation through Imitation Learning | arXiv 2025 | [Paper](https://arxiv.org/abs/2504.03515) |
+| Multimodal Fusion and VLMs for Robot Vision | arXiv 2025 | [Paper](https://arxiv.org/abs/2504.02477) · [GitHub](https://github.com/Xiaofeng-Han-Res/MF-RV) |
+| SE(3)-Equivariant Robot Learning: Tutorial Survey | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.09829) |
+| Generative AI in Robotic Manipulation | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.03464) · [GitHub](https://github.com/GAI4Manipulation/AwesomeGAIManipulation) |
+| Survey on Vision-Language-Action Models | arXiv 2025 | [Paper](https://arxiv.org/abs/2502.06851) |
+| Exploring Embodied Multimodal Large Models | arXiv 2025 | [Paper](https://arxiv.org/abs/2502.15336) |
 | General-Purpose Robots via Foundation Models | arXiv 2023 | [Paper](https://arxiv.org/abs/2312.08782) |
 | Robot Learning in the Era of Foundation Models | arXiv 2023 | [Paper](https://arxiv.org/abs/2311.14379) |
 | Language-conditioned Learning for Manipulation | arXiv 2023 | [Paper](https://arxiv.org/abs/2312.10807) |
-| Vision-Language-Action Models | arXiv 2025 | [Paper](https://arxiv.org/abs/2501.02816) |
-| Comprehensive Review of World Models | arXiv 2024 | [Paper](https://arxiv.org/abs/2406.XXXXX) |
 | LLMs for Embodied Navigation | arXiv 2023 | [Paper](https://arxiv.org/abs/2311.00530) |
 | Embodied Learning for Object-Centric Manipulation | arXiv 2024 | [Paper](https://arxiv.org/abs/2408.11537) |
+| A Survey on VLA Models for Embodied AI | arXiv 2024 | [Paper](https://arxiv.org/abs/2405.14093) |
+| Aligning Cyber Space with Physical World | arXiv 2024 | [Paper](https://arxiv.org/abs/2407.06886) |
+| Vision-Language Navigation: Survey and Taxonomy | arXiv 2024 | [Paper](https://arxiv.org/abs/2108.11544) |
+| State of VLA Research at ICLR 2026 | Blog 2025 | [Blog](https://mbreuss.github.io/blog_post_iclr_26_vla.html) |
 
 ---
 
@@ -698,6 +1080,23 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 | Peking University | NaVid, various VLAs | [Web](https://www.pku.edu.cn/) |
 | Open X-Embodiment | OXE dataset, RT-X | [Web](https://robotics-transformer-x.github.io/) |
 | DROID Collaboration | DROID dataset | [Web](https://droid-dataset.github.io/) |
+
+---
+
+## Related Works
+
+> Other awesome lists and resources for robotics and embodied AI.
+
+- **Awesome World Models**: [[GitHub](https://github.com/knightnemo/Awesome-World-Models)]
+- **Awesome-VLA-Robotics**: [[GitHub](https://github.com/Jiaaqiliu/Awesome-VLA-Robotics)]
+- **Awesome-VLA-RL**: [[GitHub](https://github.com/XiaoWei-i/Awesome-VLA-RL)]
+- **Awesome-Robotics-Foundation-Models**: [[GitHub](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models)]
+- **Awesome-Generalist-Agents**: [[GitHub](https://github.com/cheryyunl/awesome-generalist-agents)]
+- **Awesome-LLM-Robotics**: [[GitHub](https://github.com/GT-RIPL/Awesome-LLM-Robotics)]
+- **Awesome World Models for Robotics**: [[GitHub](https://github.com/leofan90/Awesome-World-Models)]
+- **Awesome-VLA-Post-Training**: [[GitHub](https://github.com/AoqunJin/Awesome-VLA-Post-Training)]
+- **Awesome-BFM-Papers**: [[GitHub](https://github.com/yuanmingqi/awesome-bfm-papers)]
+- **Awesome Embodied VLA/VA/VLN**: [[GitHub](https://github.com/jonyzhang2023/awesome-embodied-vla-va-vln)]
 
 ---
 
