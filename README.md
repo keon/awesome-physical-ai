@@ -44,10 +44,10 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
   - [Manipulation](#manipulation)
   - [Navigation](#navigation)
 - [Sim-to-Real Transfer](#sim-to-real-transfer)
+- [Surveys](#surveys)
 - [Resources](#resources)
   - [Datasets & Benchmarks](#datasets--benchmarks)
   - [Simulation Platforms](#simulation-platforms)
-- [Surveys](#surveys)
 - [Companies & Projects](#companies--projects)
 - [Related Works](#related-works)
 
@@ -128,6 +128,7 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **GR-3**: "GR-3 Technical Report", *ByteDance Seed, Jul 2025*. [[Paper](https://arxiv.org/abs/2507.15493)] [[Project](https://seed.bytedance.com/GR3)]
 
 - **UniVLA**: "UniVLA: Unified Vision-Language-Action Model", *arXiv, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.19850)] [[Code](https://github.com/baaivision/UniVLA)]
+  - **TL;DR**: Models vision, language, and actions as single interleaved stream of discrete tokens (VQ image tokens + FAST/DCT action tokens) in 8.5B autoregressive VLA. Two training stages: (1) post-train VLM with text/images to predict future frames, (2) finetune with vision and action token prediction. Emphasis on post-training stage to align VLM representations with robot tasks. Strong results on CALVIN, LIBERO, and SimplerEnv-Bridge.
 
 - **SpatialVLA**: "SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Model", *arXiv, Jan 2025*. [[Paper](https://arxiv.org/abs/2501.15830)]
 
@@ -164,16 +165,16 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **InternVLA-M1**: "InternVLA-M1: A Spatially Guided Vision-Language-Action Framework for Generalist Robot Policy", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.13778)] [[Project](https://internrobotics.github.io/internvla-m1.github.io/)] [[Code](https://github.com/InternRobotics/InternVLA-M1)]
 
 - **Cosmos Policy**: "Fine-Tuning Video Models for Visuomotor Control and Planning", *ICLR 2026 Submission*.
-  - Finetunes NVIDIA Cosmos Video Foundation Model for action prediction by injecting action chunks into latent tokens.
+  - **TL;DR**: Finetunes NVIDIA Cosmos Video Foundation Model for action prediction. Core idea: inject additional modalities like future action chunks or value function estimations into latent token sequence. Good results on LIBERO with real-world comparisons against Pi0.5.
 
 - **Disentangled Robot Learning**: "Disentangled Robot Learning via Separate Forward and Inverse Dynamics Pretraining", *ICLR 2026 Submission*.
-  - Pretrains separate forward/inverse dynamics models then combines for coupled policy finetuning.
+  - **TL;DR**: Novel approach pretraining separate forward and inverse dynamics models. In second stage, combines them for coupled policy finetuning. Good results on CALVIN, decent on SIMPLER.
 
 - **XR-1**: "Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations", *ICLR 2026 Submission*.
-  - Introduces Unified Vision-Motion Codes (UVMC) with dual-branch VQ-VAE and shared codebook for human-robot co-pretraining.
+  - **TL;DR**: Introduces Unified Vision-Motion Codes (UVMC), a discrete latent representation jointly encoding visual dynamics and robotic motion using dual-branch VQ-VAE with shared codebook. Enables better co-pretraining from human and robot demonstrations. Tested against Groot-N.1.5 and Pi0 with good real-world results.
 
 - **VLM4VLA**: "Revisiting Vision-Language-Models in Vision-Language-Action Models", *ICLR 2026 Submission*.
-  - Finds that downstream VLA performance has no correlation with VLM performance on standard benchmarks.
+  - **TL;DR**: Comprehensive comparison of VLMs as backbone choice for VLAs. Finds downstream VLA performance has no correlation with VLM performance on standard benchmarks. Important finding for VLA architecture design, though limited to benchmark setups without real robot results.
 
 - **FLOWER**: "FLOWER: Flow-based VLA for CALVIN Benchmark", *arXiv, 2025*.
   - State-of-the-art on CALVIN benchmarks using flow-based action generation.
@@ -279,10 +280,10 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **Behavior Transformers**: "Behavior Transformers: Cloning k Modes with One Stone", *NeurIPS 2022*. [[Paper](https://arxiv.org/abs/2206.11251)] [[Code](https://github.com/notmahi/bet)]
 
 - **FASTer**: "FASTer: Toward Powerful and Efficient Autoregressive VLAs with Learnable Action Tokenizer and Block-Wise Decoding", *ICLR 2026 Submission*.
-  - Combines Residual Vector Quantization (RVQ) with DCT frequency loss for higher compression than FAST.
+  - **TL;DR**: Novel discrete action tokenizer combining Residual Vector Quantization (RVQ) with frequency L1 loss (DCT) and time domain L1 loss. Patchifies action tokens along temporal and grouped action dimension axes (e.g., base motion, arm joints). Higher compression ratio than FAST with strong results on SIMPLER and LIBERO.
 
 - **OmniSAT**: "OmniSAT: Compact Action Token, Faster Autoregression for Vision-Language-Action Models", *ICLR 2026 Submission*.
-  - Uses B-Spline based encoder for compact action representation with VQ-VAE tokenization.
+  - **TL;DR**: VLA tokenizer using B-Splines for compact action representation. Two-stage encoding: (1) aligns different action chunk lengths into normalized fixed-length representation, (2) B-Spline encoder for compact representation, then VQ-VAE for discrete tokens. Improves upon both FAST and BEAST across LIBERO and SIMPLER.
 
 - **VQ-VLA**: "VQ-VLA: Improving Vision-Language-Action Models via Scaling Vector-Quantized Action Tokenizers", *ICCV 2025*. [[Paper](https://arxiv.org/abs/2507.01016)] [[Project](https://xiaoxiao0406.github.io/vqvla.github.io)]
 
@@ -291,13 +292,16 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 > Models using discrete diffusion for parallel action token generation instead of autoregressive decoding.
 
 - **Discrete Diffusion VLA**: "Bringing Discrete Diffusion to Action Decoding in Vision-Language-Action Policies", *arXiv, Aug 2025*. [[Paper](https://arxiv.org/abs/2508.20072)]
-  - Applies discrete diffusion to OpenVLA for fast action chunk generation with adaptive decoding.
+  - **TL;DR**: Takes OpenVLA and applies discrete diffusion for fast action chunk-based generation of discrete action tokens. Proposes adaptive decoding for inference with strong results on LIBERO + SIMPLER.
 
 - **dVLA**: "Diffusion Vision-Language-Action Model with Multimodal Chain-of-Thought", *ICLR 2026 Submission*.
-  - Combines discrete diffusion with ECoT for parallel sampling of future frames, text, and actions.
+  - **TL;DR**: Discrete diffusion VLA using co-generation for future frames, text, and actions leveraging fast parallel sampling over AR models. Essentially ECoT + discrete diffusion done well, with good results on LIBERO + real world experiments.
 
 - **DIVA**: "Discrete Diffusion Vision-Language-Action Models for Parallelized Action Generation", *ICLR 2026 Submission*.
-  - Focuses on token substitution strategies during inference for improved performance.
+  - **TL;DR**: Discrete diffusion VLA focusing on how to substitute tokens during inference for better performance through optimized token replacement strategies.
+
+- **Unified Diffusion VLA**: "Unified Vision-Language-Action Model via Joint Discrete Denoising Diffusion Process", *ICLR 2026 Submission*.
+  - **TL;DR**: Generates future frames and discrete actions together with block-wise causal masking. Good results on CALVIN, LIBERO, and SIMPLER.
 
 - **LLaDA-VLA**: "Vision Language Diffusion Action Models", *arXiv, Sep 2025*. [[Paper](https://arxiv.org/abs/2506.14932)] [[Project](https://wenyuqing.github.io/llada-vla/)]
 
@@ -373,7 +377,7 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **DiWA**: "DiWA: Diffusion Policy Adaptation with World Models", *CoRL 2025*. [[Paper](https://arxiv.org/abs/2508.03645)] [[Project](https://diwa.cs.uni-freiburg.de/)] [[Code](https://github.com/acl21/diwa)]
 
 - **GPC**: "Compose Your Policies! Improving Diffusion-based or Flow-based Robot Policies via Test-time Distribution-level Composition", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.01068)] [[Project](https://sagecao1125.github.io/GPC-Site/)] [[Code](https://github.com/SageCao1125/GPC)]
-  - Composes multiple flow/diffusion policies at test time using convex optimization for improved performance.
+  - **TL;DR**: Composes flow/diffusion-based VLA policies at test time using convex optimization and test-time search to combine scores from multiple policies. Improves performance without additional training by leveraging energy-based formulation that allows summing model scores.
 
 ---
 
@@ -498,16 +502,16 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **From Seeing to Doing**: "From Seeing to Doing: Bridging Reasoning and Decision for Robotic Manipulation", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.08548)] [[Project](https://embodied-fsd.github.io/)]
 
 - **Actions as Language**: "Fine-Tuning VLMs into VLAs Without Catastrophic Forgetting", *ICLR 2026 Submission*.
-  - Relabels robot datasets with subtasks and text-based actions to bridge the domain gap without forgetting VLM capabilities.
+  - **TL;DR**: Instead of directly fine-tuning VLMs with discrete action tokens (which causes catastrophic forgetting), relabels robot datasets with subtasks, actions as text, and intermediate motion-planning phrases like "move left". Bridges VLM domain gap without reducing VQA benchmark performance. Cheap LoRA finetuning achieves strong action prediction while maintaining VLM reasoning.
 
 - **InstructVLA**: "Vision-Language-Action Instruction Tuning: From Understanding to Manipulation", *arXiv, Jul 2025*. [[Paper](https://arxiv.org/abs/2507.17520)] [[Project](https://yangs03.github.io/InstructVLA_Home/)]
-  - Two-stage pipeline with action expert and MoE-adapted VLM for instruction-following.
+  - **TL;DR**: Two-stage Vision-Language-Action Instruction Tuning pipeline: (1) pretrain action expert and latent action interface, (2) instruction-tune MoE-adapted VLM to switch between textual reasoning and latent action generation. Decouples multimodal reasoning from action generation to avoid catastrophic forgetting. Introduces instruction-based SIMPLER benchmark.
 
 - **Hybrid ECoT Training**: "Hybrid Training for Vision-Language-Action Models", *ICLR 2026 Submission*.
-  - Decomposes ECoT pretraining into think/act/follow subtasks for faster inference with performance benefits.
+  - **TL;DR**: Decomposes ECoT pretraining into think/act/follow subtasks that maintain performance benefits while enabling fast inference. Shows co-training with ECoT objectives results in better representations for action prediction.
 
 - **HAMLET**: "Switch Your Vision-Language-Action Model into a History-Aware Policy", *ICLR 2026 Submission*.
-  - Introduces plug-and-play memory module with moment tokens for temporal aggregation.
+  - **TL;DR**: Plug-and-play memory module with moment tokens to capture temporal information from prior timesteps. Memory module aggregates tokens over time for history-conditioned prediction, addressing the limitation that most VLAs only encode current images.
 
 ### Error Detection & Recovery
 
@@ -601,14 +605,15 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **RoboMonkey**: "RoboMonkey: Scaling Test-Time Sampling and Verification for Vision-Language-Action Models", *CoRL 2025*. [[Paper](https://arxiv.org/abs/2506.17811)] [[Project](https://robomonkey-vla.github.io/)] [[Code](https://github.com/robomonkey-vla/RoboMonkey)]
 
 - **Embodied-R1**: "Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation", *arXiv, Aug 2025*. [[Paper](https://arxiv.org/abs/2508.13998)] [[Project](https://embodied-r1.github.io/)] [[Code](https://github.com/pickxiguapi/Embodied-R1)]
+  - **TL;DR**: Pointing VLM for embodied reasoning trained via two-stage Reinforced Fine-Tuning (RFT) curriculum on Embodied-Points-200K dataset. Uses embodiment-agnostic intermediates: REG (point to referred object), RRG (point to relation-defined place), OFG (point to functional part like handle), VTG (output point sequence as visual trace). Strong embodied benchmark performance with good SIMPLER generalization as planner.
 
 - **VLA-Reasoner**: "VLA-Reasoner: Empowering Vision-Language-Action Models with Reasoning via Online Monte Carlo Tree Search", *arXiv, Sep 2025*. [[Paper](https://arxiv.org/abs/2509.22643)]
 
 - **Residual RL for VLAs**: "Self-Improving Vision-Language-Action Models with Data Generation via Residual RL", *ICLR 2026 Submission*.
-  - Collects data with frozen VLA + residual policy for recovery behavior, then SFT finetunes VLA.
+  - **TL;DR**: Residual RL method collecting data with frozen VLA and small residual policy. Residual interventions provide high-quality data with recovery behavior. Finally finetunes VLA using SFT. Achieves 99% on LIBERO.
 
 - **STA-PPO/TPO**: "Progressive Stage-Aware Reinforcement for Fine-Tuning Vision-Language-Action Models", *ICLR 2026 Submission*.
-  - Breaks tasks into semantic stages (Reach→Grasp→Transport→Place) with stage-level rewards.
+  - **TL;DR**: Breaks robot tasks into semantic stages (Reach→Grasp→Transport→Place) and assigns rewards to each stage instead of whole trajectory. Uses STA-TPO for offline preference learning and STA-PPO for online RL, both at stage level. Achieves 98% on Bridge SIMPLER.
 
 - **Verifier-free Test-Time Sampling**: "Verifier-free Test-Time Sampling for Vision Language Action Models", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.05681)]
 
@@ -663,10 +668,10 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **RoboAgent**: "RoboAgent: Generalization and Efficiency via Semantic Augmentations", *ICRA 2024*. [[Paper](https://arxiv.org/abs/2309.01918)] [[Project](https://robopen.github.io/)]
 
 - **X-VLA**: "Soft-Prompted Transformer as Scalable Cross-Embodiment Vision-Language-Action Model", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.10274)] [[Project](https://thu-air-dream.github.io/X-VLA/)] [[Code](https://github.com/2toinf/X-VLA)]
-  - Uses learnable soft-prompt tokens for different datasets/embodiments with insightful scaling analysis.
+  - **TL;DR**: Tackles cross-action-space learning using soft-prompting tokens for different datasets. Soft-prompt tokens are learnable readout-tokens for the VLA. Strong results on LIBERO, CALVIN, SIMPLER, RoboTwin, and VLABench. Includes insightful scaling analysis ablating pretraining design decisions.
 
 - **HiMoE-VLA**: "Hierarchical Mixture-of-Experts for Generalist Vision-Language-Action Policies", *arXiv, Dec 2025*. [[Paper](https://arxiv.org/abs/2512.05693)] [[Code](https://github.com/ZhiyingDu/HiMoE-VLA)]
-  - Uses hierarchical MoE blocks (Action-Space MoEs + Heterogeneity Balancing MoEs) for cross-embodiment.
+  - **TL;DR**: Substitutes Pi-style action expert with Hierarchical Mixture-of-Experts Transformer for better embodiment adaptation. Interleaves standard blocks with Action-Space MoEs and Heterogeneity Balancing MoEs to handle different action spaces. Improves upon Pi0 across experiments.
 
 - **D2E**: "Scaling Vision-Action Pretraining on Desktop Data for Transfer to Embodied AI", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.05684)] [[Project](https://worv-ai.github.io/d2e/)] [[Code](https://github.com/worv-ai/D2E)]
 
@@ -708,10 +713,10 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **PDVLA**: "PDVLA: Parallel Decoding for Vision-Language-Action Models", *arXiv, 2025*. [[Paper](https://arxiv.org/abs/2505.XXXXX)]
 
 - **HyperVLA**: "Efficient Inference in Vision-Language-Action Models via Hypernetworks", *ICLR 2026 Submission*.
-  - Uses hypernetworks to generate compact task-specific policies, dramatically reducing inference cost.
+  - **TL;DR**: Uses hypernetworks to generate small task-specific policies conditioned on language instructions and initial images. Dramatically reduces inference cost by only activating the compact generated policy during execution instead of the full VLA model.
 
 - **AutoQVLA**: "Not All Channels Are Equal in Vision-Language-Action Model's Quantization", *ICLR 2026 Submission*.
-  - Proposes improved quantization achieving 30% VRAM reduction while maintaining OpenVLA performance.
+  - **TL;DR**: Analyzes quantization of OpenVLA and proposes improved quantization method that maintains performance with only 30% of the original VRAM requirements through channel-aware optimization.
 
 - **SpecPrune-VLA**: "Accelerating Vision-Language-Action Models via Action-Aware Self-Speculative Pruning", *arXiv, Sep 2025*. [[Paper](https://arxiv.org/abs/2509.05614)]
 
@@ -916,6 +921,117 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 ---
 
+## Surveys
+
+> Comprehensive reviews and taxonomies of VLA, world models, and embodied AI research.
+
+- **Foundation Models in Robotics**: "Foundation Models in Robotics: Applications, Challenges, and the Future", *IJRR 2025*. [[Paper](https://arxiv.org/abs/2312.07843)] [[GitHub](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models)]
+  - Surveys foundation models across perception, decision-making, and control in robotics.
+
+- **Learning-based Dynamics Models**: "A Review of Learning-based Dynamics Models for Robotic Manipulation", *Science Robotics 2025*. [[Paper](https://albertboai.com/assets/pdf/2025_scirobotics.adt1497.pdf)]
+  - Reviews learned dynamics models for predicting physical interactions in manipulation.
+
+- **VLA Anatomy Survey**: "An Anatomy of VLA Models: From Modules to Milestones", *arXiv, Dec 2025*. [[Paper](https://arxiv.org/abs/2512.11362)] [[Project](https://suyuz1.github.io/Survery/)]
+  - Structural blueprint of VLA modules, milestones, and five core challenges (representation, execution, generalization, safety, evaluation).
+
+- **World Models for Embodied AI**: "A Comprehensive Survey on World Models for Embodied AI", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.16732)] [[GitHub](https://github.com/Li-Zn-H/AwesomeWorldModels)]
+  - Taxonomizes world models for embodied agents across prediction, planning, and simulation.
+
+- **VLA for Real-World Robotics**: "VLA Models for Robotics: Real-World Applications", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.07077)]
+  - Full-stack review bridging VLA research to practical robotics deployment.
+
+- **Pure VLA Survey**: "Pure VLA Models: A Comprehensive Survey", *arXiv, Sep 2025*. [[Paper](https://arxiv.org/abs/2509.19012)]
+  - Taxonomy of VLA paradigms: autoregressive, diffusion, RL, and hybrid methods.
+
+- **Large VLM-based VLA**: "Large VLM-based VLA for Robotic Manipulation", *arXiv, Aug 2025*. [[Paper](https://arxiv.org/abs/2508.13073)] [[GitHub](https://github.com/JiuTian-VL/Large-VLM-based-VLA-for-Robotic-Manipulation)]
+  - Reviews VLAs built on large pretrained VLMs, comparing monolithic vs hierarchical designs.
+
+- **Embodied AI Decision-Making**: "Large Model Empowered Embodied AI: Decision-Making", *arXiv, Aug 2025*. [[Paper](https://arxiv.org/abs/2508.10399)]
+  - Surveys how large models enable embodied decision-making and planning.
+
+- **Foundation Model Driven Robotics**: "Foundation Model Driven Robotics", *arXiv, Jul 2025*. [[Paper](https://arxiv.org/abs/2507.10087)]
+  - Overview of foundation models transforming perception, planning, and control in robotics.
+
+- **Action Tokenization Survey**: "VLA Survey: An Action Tokenization Perspective", *PKU-PsiBot, Jul 2025*. [[Paper](https://arxiv.org/abs/2507.01925)]
+  - Analyzes VLA design through action token formats (language, code, affordance, trajectory, latent).
+
+- **VLA for Autonomous Driving**: "VLA Models for Autonomous Driving", *arXiv, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.24044)] [[GitHub](https://github.com/JohnsonJiang1996/Awesome-VLA4AD)]
+  - Surveys VLA applications in end-to-end autonomous driving systems.
+
+- **VLA Post-Training**: "VLA Post-Training and Human Motor Learning", *arXiv, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.20966)] [[GitHub](https://github.com/AoqunJin/Awesome-VLA-Post-Training)]
+  - Reviews post-training methods for VLAs including RL finetuning and human feedback.
+
+- **Deep RL for Robotics**: "Deep RL for Robotics: Real-World Successes", *arXiv, Aug 2024*. [[Paper](https://arxiv.org/abs/2408.03539)]
+  - Surveys successful real-world deployments of deep RL in robotics.
+
+- **Diffusion Policy Survey**: "Survey on Diffusion Policy for Robotic Manipulation", *TechRxiv 2025*. [[Paper](https://doi.org/10.36227/techrxiv.174378343.39356214/v1)] [[GitHub](https://github.com/HITSZ-Robotics/DiffusionPolicy-Robotics)]
+  - Reviews diffusion-based policies for robotic manipulation tasks.
+
+- **Industrial Robotics Survey**: "Embodied Intelligent Industrial Robotics", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.09305)] [[GitHub](https://github.com/jackeyzengl/Embodied_Intelligent_Industrial_Robotics_Paper_List)]
+  - Surveys embodied AI for industrial automation and manufacturing.
+
+- **Neural Brain Framework**: "Neural Brain: Framework for Embodied Agents", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.07634)] [[GitHub](https://github.com/CNJianLiu/Neural-Brain-for-Embodied-Agents)]
+  - Proposes unified framework viewing embodied agents through neural architecture lens.
+
+- **VLA Concepts Survey**: "VLA Models: Concepts, Progress, Applications", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.04769)]
+  - Introductory survey covering VLA fundamentals and application domains.
+
+- **Navigation with Simulators**: "Robotic Navigation with Physics Simulators", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.01458)]
+  - Reviews sim-to-real transfer methods for robotic navigation.
+
+- **Multimodal Navigation**: "Multimodal Perception for Goal-oriented Navigation", *arXiv, Apr 2025*. [[Paper](https://arxiv.org/abs/2504.15643)]
+  - Surveys multimodal perception fusion for robot navigation tasks.
+
+- **Diffusion for Manipulation**: "Diffusion Models for Robotic Manipulation", *arXiv, Apr 2025*. [[Paper](https://arxiv.org/abs/2504.08438)]
+  - Reviews diffusion model applications in manipulation policy learning.
+
+- **Dexterous Manipulation Survey**: "Dexterous Manipulation through Imitation Learning", *arXiv, Apr 2025*. [[Paper](https://arxiv.org/abs/2504.03515)]
+  - Surveys imitation learning methods for dexterous robot hands.
+
+- **Multimodal Fusion for Robotics**: "Multimodal Fusion and VLMs for Robot Vision", *arXiv, Apr 2025*. [[Paper](https://arxiv.org/abs/2504.02477)] [[GitHub](https://github.com/Xiaofeng-Han-Res/MF-RV)]
+  - Reviews multimodal fusion techniques for robot perception systems.
+
+- **SE(3)-Equivariant Learning**: "SE(3)-Equivariant Robot Learning: Tutorial Survey", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.09829)]
+  - Tutorial on incorporating geometric symmetries into robot learning.
+
+- **Generative AI for Manipulation**: "Generative AI in Robotic Manipulation", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.03464)] [[GitHub](https://github.com/GAI4Manipulation/AwesomeGAIManipulation)]
+  - Surveys generative models (diffusion, LLMs, VLMs) for manipulation tasks.
+
+- **VLA Survey 2025**: "Survey on Vision-Language-Action Models", *arXiv, Feb 2025*. [[Paper](https://arxiv.org/abs/2502.06851)]
+  - AI-generated survey demonstrating automated literature review for VLAs.
+
+- **Embodied Multimodal Models**: "Exploring Embodied Multimodal Large Models", *arXiv, Feb 2025*. [[Paper](https://arxiv.org/abs/2502.15336)]
+  - Surveys multimodal LLMs adapted for embodied reasoning and control.
+
+- **General-Purpose Robots Survey**: "General-Purpose Robots via Foundation Models", *arXiv, Dec 2023*. [[Paper](https://arxiv.org/abs/2312.08782)]
+  - Early survey on using foundation models for general-purpose robotics.
+
+- **Robot Learning Foundation Models**: "Robot Learning in the Era of Foundation Models", *arXiv, Nov 2023*. [[Paper](https://arxiv.org/abs/2311.14379)]
+  - Surveys how foundation models are reshaping robot learning paradigms.
+
+- **Language-conditioned Manipulation**: "Language-conditioned Learning for Manipulation", *arXiv, Dec 2023*. [[Paper](https://arxiv.org/abs/2312.10807)]
+  - Reviews language-guided policy learning for manipulation.
+
+- **LLMs for Navigation**: "LLMs for Embodied Navigation", *arXiv, Nov 2023*. [[Paper](https://arxiv.org/abs/2311.00530)]
+  - Surveys LLM applications in robot navigation and exploration.
+
+- **Object-Centric Manipulation**: "Embodied Learning for Object-Centric Manipulation", *arXiv, Aug 2024*. [[Paper](https://arxiv.org/abs/2408.11537)]
+  - Reviews object-centric representations for manipulation learning.
+
+- **VLA for Embodied AI**: "A Survey on VLA Models for Embodied AI", *arXiv, May 2024*. [[Paper](https://arxiv.org/abs/2405.14093)]
+  - Taxonomizes VLAs by component (vision, language, action) and control policy type.
+
+- **Cyber-Physical Alignment**: "Aligning Cyber Space with Physical World", *arXiv, Jul 2024*. [[Paper](https://arxiv.org/abs/2407.06886)]
+  - Surveys bridging digital AI models with physical robot execution.
+
+- **VLN Survey**: "Vision-Language Navigation: Survey and Taxonomy", *arXiv, 2024*. [[Paper](https://arxiv.org/abs/2108.11544)]
+  - Comprehensive taxonomy of vision-language navigation methods and benchmarks.
+
+- **State of VLA at ICLR 2026**: "State of VLA Research at ICLR 2026", *Blog, Oct 2025*. [[Blog](https://mbreuss.github.io/blog_post_iclr_26_vla.html)]
+  - Analysis of VLA trends from ICLR 2026 submissions covering discrete diffusion, ECoT, and tokenizers.
+
+---
+
 ## Resources
 
 ### Datasets & Benchmarks
@@ -975,48 +1091,6 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 | MuBlE | Task planning benchmark | [Paper](https://arxiv.org/abs/2503.02834) · [Code](https://github.com/michaal94/MuBlE) |
 | LocoMuJoCo | Locomotion benchmark | [Docs](https://loco-mujoco.readthedocs.io/) · [Code](https://github.com/robfiras/loco-mujoco) |
 | BEHAVIOR Robot Suite | Whole-body manipulation | [Paper](https://arxiv.org/abs/2503.05652) · [Project](https://behavior-robot-suite.github.io/) |
-
----
-
-## Surveys
-
-| Survey | Venue | Links |
-|--------|-------|-------|
-| Foundation Models in Robotics | IJRR 2025 | [Paper](https://arxiv.org/abs/2312.07843) · [GitHub](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models) |
-| A Review of Learning-based Dynamics Models for Robotic Manipulation | Science Robotics 2025 | [Paper](https://albertboai.com/assets/pdf/2025_scirobotics.adt1497.pdf) |
-| An Anatomy of VLA Models: From Modules to Milestones | arXiv 2025 | [Paper](https://arxiv.org/abs/2512.11362) · [Project](https://suyuz1.github.io/Survery/) |
-| A Comprehensive Survey on World Models for Embodied AI | arXiv 2025 | [Paper](https://arxiv.org/abs/2510.16732) · [GitHub](https://github.com/Li-Zn-H/AwesomeWorldModels) |
-| VLA Models for Robotics: Real-World Applications | arXiv 2025 | [Paper](https://arxiv.org/abs/2510.07077) |
-| Pure VLA Models: A Comprehensive Survey | arXiv 2025 | [Paper](https://arxiv.org/abs/2509.19012) |
-| Large VLM-based VLA for Robotic Manipulation | arXiv 2025 | [Paper](https://arxiv.org/abs/2508.13073) · [GitHub](https://github.com/JiuTian-VL/Large-VLM-based-VLA-for-Robotic-Manipulation) |
-| Large Model Empowered Embodied AI: Decision-Making | arXiv 2025 | [Paper](https://arxiv.org/abs/2508.10399) |
-| Foundation Model Driven Robotics | arXiv 2025 | [Paper](https://arxiv.org/abs/2507.10087) |
-| VLA Survey: An Action Tokenization Perspective | PKU-PsiBot 2025 | [Paper](https://arxiv.org/abs/2507.01925) |
-| VLA Models for Autonomous Driving | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.24044) · [GitHub](https://github.com/JohnsonJiang1996/Awesome-VLA4AD) |
-| VLA Post-Training and Human Motor Learning | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.20966) · [GitHub](https://github.com/AoqunJin/Awesome-VLA-Post-Training) |
-| Deep RL for Robotics: Real-World Successes | arXiv 2025 | [Paper](https://arxiv.org/abs/2408.03539) |
-| Survey on Diffusion Policy for Robotic Manipulation | TechRxiv 2025 | [Paper](https://doi.org/10.36227/techrxiv.174378343.39356214/v1) · [GitHub](https://github.com/HITSZ-Robotics/DiffusionPolicy-Robotics) |
-| Embodied Intelligent Industrial Robotics | arXiv 2025 | [Paper](https://arxiv.org/abs/2505.09305) · [GitHub](https://github.com/jackeyzengl/Embodied_Intelligent_Industrial_Robotics_Paper_List) |
-| Neural Brain: Framework for Embodied Agents | arXiv 2025 | [Paper](https://arxiv.org/abs/2505.07634) · [GitHub](https://github.com/CNJianLiu/Neural-Brain-for-Embodied-Agents) |
-| VLA Models: Concepts, Progress, Applications | arXiv 2025 | [Paper](https://arxiv.org/abs/2505.04769) |
-| Robotic Navigation with Physics Simulators | arXiv 2025 | [Paper](https://arxiv.org/abs/2505.01458) |
-| Multimodal Perception for Goal-oriented Navigation | arXiv 2025 | [Paper](https://arxiv.org/abs/2504.15643) |
-| Diffusion Models for Robotic Manipulation | arXiv 2025 | [Paper](https://arxiv.org/abs/2504.08438) |
-| Dexterous Manipulation through Imitation Learning | arXiv 2025 | [Paper](https://arxiv.org/abs/2504.03515) |
-| Multimodal Fusion and VLMs for Robot Vision | arXiv 2025 | [Paper](https://arxiv.org/abs/2504.02477) · [GitHub](https://github.com/Xiaofeng-Han-Res/MF-RV) |
-| SE(3)-Equivariant Robot Learning: Tutorial Survey | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.09829) |
-| Generative AI in Robotic Manipulation | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.03464) · [GitHub](https://github.com/GAI4Manipulation/AwesomeGAIManipulation) |
-| Survey on Vision-Language-Action Models | arXiv 2025 | [Paper](https://arxiv.org/abs/2502.06851) |
-| Exploring Embodied Multimodal Large Models | arXiv 2025 | [Paper](https://arxiv.org/abs/2502.15336) |
-| General-Purpose Robots via Foundation Models | arXiv 2023 | [Paper](https://arxiv.org/abs/2312.08782) |
-| Robot Learning in the Era of Foundation Models | arXiv 2023 | [Paper](https://arxiv.org/abs/2311.14379) |
-| Language-conditioned Learning for Manipulation | arXiv 2023 | [Paper](https://arxiv.org/abs/2312.10807) |
-| LLMs for Embodied Navigation | arXiv 2023 | [Paper](https://arxiv.org/abs/2311.00530) |
-| Embodied Learning for Object-Centric Manipulation | arXiv 2024 | [Paper](https://arxiv.org/abs/2408.11537) |
-| A Survey on VLA Models for Embodied AI | arXiv 2024 | [Paper](https://arxiv.org/abs/2405.14093) |
-| Aligning Cyber Space with Physical World | arXiv 2024 | [Paper](https://arxiv.org/abs/2407.06886) |
-| Vision-Language Navigation: Survey and Taxonomy | arXiv 2024 | [Paper](https://arxiv.org/abs/2108.11544) |
-| State of VLA Research at ICLR 2026 | Blog 2025 | [Blog](https://mbreuss.github.io/blog_post_iclr_26_vla.html) |
 
 ---
 
