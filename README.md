@@ -797,6 +797,9 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - "Learning Humanoid Locomotion with Transformers", *arXiv, Mar 2024*. [[Paper](https://arxiv.org/abs/2303.03381)] [[Project](https://humanoid-locomotion.github.io/)]
 
+- **WholeBodyVLA**: "WholeBodyVLA: Towards Unified Latent VLA for Whole-Body Loco-Manipulation Control", *ICLR 2026*. [[Paper](https://arxiv.org/abs/2512.11047)] [[Project](https://wholebodyvla.github.io/)] [[Code](https://github.com/OpenDriveLab/WholebodyVLA)]
+  - Unified VLA framework learning latent actions from action-free egocentric videos for whole-body humanoid loco-manipulation; outperforms GR00T by 21.3% on AgiBot X2.
+
 ### Manipulation
 
 > Robot manipulation with foundation models.
