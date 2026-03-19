@@ -461,6 +461,9 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **UniSim**: "UniSim: Learning Interactive Real-World Simulators", *ICLR 2024*. [[Paper](https://arxiv.org/abs/2310.06114)] [[Project](https://universal-simulator.github.io/unisim/)]
 
+- **PointWorld**: "PointWorld: Scaling 3D World Models for In-The-Wild Robotic Manipulation", *arXiv, Jan 2026*. [[Paper](https://arxiv.org/abs/2601.03782)] [[Project](https://point-world.github.io/)] [[Code](https://github.com/NVlabs/PointWorld)]
+  - Pre-trained 3D world model representing state and action as 3D point flows; trained on 2M trajectories with real-time MPC inference (0.1s). Zero-shot manipulation without demonstrations or fine-tuning.
+
 ---
 
 ## Reasoning & Planning
