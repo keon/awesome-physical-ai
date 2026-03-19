@@ -181,6 +181,9 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **EO-1**: "EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for General Robot Control", *arXiv, Aug 2025*. [[Paper](https://arxiv.org/abs/2508.21112)] [[Project](https://eo-robotics.ai/eo-1)] [[Code](https://github.com/eo-robotics/EO-1)]
 
+- **LingBot-VLA**: "A Pragmatic VLA Foundation Model", *arXiv, Jan 2026*. [[Paper](https://arxiv.org/abs/2601.18692)] [[Code](https://github.com/Robbyant/lingbot-vla)]
+  - Industry-scale VLA from Ant Group trained on 20K hours of real dual-arm robot data across 9 configurations; fully open-sourced with 1.5-2.8x training speedup over existing VLA codebases.
+
 ### Modular VLAs
 
 > Models that decouple cognition (VLM-based planning) from action (specialized motor modules).
