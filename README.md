@@ -476,6 +476,9 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **PointWorld**: "PointWorld: Scaling 3D World Models for In-The-Wild Robotic Manipulation", *arXiv, Jan 2026*. [[Paper](https://arxiv.org/abs/2601.03782)] [[Project](https://point-world.github.io/)] [[Code](https://github.com/NVlabs/PointWorld)]
   - Pre-trained 3D world model representing state and action as 3D point flows; trained on 2M trajectories with real-time MPC inference (0.1s). Zero-shot manipulation without demonstrations or fine-tuning.
 
+- **DreamDojo**: "DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos", *arXiv, Feb 2026*. [[Paper](https://arxiv.org/abs/2602.06949)] [[Project](https://dreamdojo-world.github.io/)] [[Code](https://github.com/NVIDIA/DreamDojo)]
+  - Foundation world model from NVIDIA GEAR pretrained on 44K hours of egocentric human video (largest to date); continuous latent actions enable interaction knowledge transfer. Real-time 10.81 FPS after distillation.
+
 ---
 
 ## Reasoning & Planning
