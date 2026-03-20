@@ -191,6 +191,9 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **Gemini Robotics**: "Gemini Robotics: Bringing AI into the Physical World", *arXiv, Mar 2025*. [[Paper](https://arxiv.org/abs/2503.20020)] [[Blog](https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/)]
   - Introduces "Thinking Before Acting" with internal natural language reasoning.
 
+- **Gemini Robotics 1.5**: "Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.03342)] [[Blog](https://deepmind.google/blog/gemini-robotics-15-brings-ai-agents-into-the-physical-world/)]
+  - Multi-embodiment VLA with novel Motion Transfer enabling zero-shot skill transfer across ALOHA, Franka, and Apollo humanoid; interleaves actions with multi-level natural language reasoning.
+
 - **Helix**: "Helix: A Vision-Language-Action Model for Generalist Humanoid Control", *arXiv, Apr 2025*. [[Paper](https://arxiv.org/abs/2504.XXXXX)]
 
 - **SayCan**: "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances", *CoRL 2022*. [[Paper](https://arxiv.org/abs/2204.01691)] [[Project](https://say-can.github.io/)]
