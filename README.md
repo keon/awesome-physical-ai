@@ -651,6 +651,9 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - "Scaling Robot Learning with Semantically Imagined Experience", *RSS 2023*. [[Paper](https://arxiv.org/abs/2302.11550)]
 
+- **EgoScale**: "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data", *arXiv, Feb 2026*. [[Paper](https://arxiv.org/abs/2602.16710)] [[Project](https://research.nvidia.com/labs/gear/egoscale/)]
+  - Discovers log-linear scaling law for human-to-robot dexterous transfer using 20K+ hours of egocentric video; 54% success rate improvement on 22-DoF hand with cross-embodiment generalization.
+
 ### Cross-Embodiment Transfer
 
 > Single policies controlling diverse robot types.
