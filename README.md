@@ -438,6 +438,9 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **RTFM**: "RTFM: A Real-Time Frame Model", *World Labs, Oct 2025*. [[Project](https://www.worldlabs.ai/)]
 
+- **Cosmos-Predict2.5**: "World Simulation with Video Foundation Models for Physical AI", *NVIDIA, Oct 2025*. [[Paper](https://arxiv.org/abs/2511.00062)] [[Project](https://research.nvidia.com/labs/dir/cosmos-predict2.5/)] [[Code](https://github.com/nvidia-cosmos/cosmos-predict2.5)]
+  - Open-source flow-based world foundation model unifying Text2World, Image2World, and Video2World; trained on 200M video clips at 2B/14B scales with RL post-training for Physical AI applications.
+
 ### Embodied World Models
 
 > World models designed for robotic manipulation, navigation, and physical reasoning.
