@@ -687,6 +687,9 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **D2E**: "Scaling Vision-Action Pretraining on Desktop Data for Transfer to Embodied AI", *arXiv, Oct 2025*. [[Paper](https://arxiv.org/abs/2510.05684)] [[Project](https://worv-ai.github.io/d2e/)] [[Code](https://github.com/worv-ai/D2E)]
 
+- **Being-H0.5**: "Being-H0.5: Scaling Human-Centric Robot Learning for Cross-Embodiment Generalization", *arXiv, Jan 2026*. [[Paper](https://arxiv.org/abs/2601.12993)] [[Project](https://research.beingbeyond.com/being-h05)] [[Code](https://github.com/BeingBeyond/Being-H)]
+  - Human-centric VLA with Mixture-of-Flow architecture trained on UniHand-2.0 (35K+ hours, 30 embodiments); treats human hand motion as universal embodiment for cross-platform transfer. LIBERO 98.9%.
+
 ### Open-Vocabulary Generalization
 
 > Models that generalize to novel visual appearances and semantic concepts.
