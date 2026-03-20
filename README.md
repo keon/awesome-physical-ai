@@ -262,6 +262,9 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **VLA-Adapter**: "VLA-Adapter: An Effective Paradigm for Tiny-Scale Vision-Language-Action Model", *arXiv, Sep 2025*. [[Paper](https://arxiv.org/abs/2509.09372)] [[Project](https://vla-adapter.github.io/)]
 
+- **DynamicVLA**: "DynamicVLA: A Vision-Language-Action Model for Dynamic Object Manipulation", *arXiv, Jan 2026*. [[Paper](https://arxiv.org/abs/2601.22153)] [[Code](https://github.com/hzxie/DynamicVLA)]
+  - Compact 0.4B VLA for dynamic (moving) object manipulation with continuous inference and latent-aware action streaming; introduces DOM benchmark (200K synthetic + 2K real episodes).
+
 ---
 
 ## Action Representation
