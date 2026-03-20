@@ -528,6 +528,9 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **HAMLET**: "Switch Your Vision-Language-Action Model into a History-Aware Policy", *ICLR 2026 Submission*.
   - **TL;DR**: Plug-and-play memory module with moment tokens to capture temporal information from prior timesteps. Memory module aggregates tokens over time for history-conditioned prediction, addressing the limitation that most VLAs only encode current images.
 
+- **MEM**: "MEM: Multi-Scale Embodied Memory for Vision Language Action Models", *arXiv, Mar 2026*. [[Paper](https://arxiv.org/abs/2603.03596)]
+  - Multi-scale memory from Physical Intelligence combining video-based short-horizon and text-based long-horizon memory; enables 15-minute robot tasks like kitchen cleanup and meal preparation.
+
 ### Error Detection & Recovery
 
 > Methods for detecting failures and correcting robot actions in real-time.
