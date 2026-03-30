@@ -513,6 +513,8 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **Embodied-R**: "Embodied-R: Collaborative Framework for Activating Embodied Spatial Reasoning via Reinforcement Learning", *arXiv, Apr 2025*. [[Paper](https://arxiv.org/abs/2504.12680)] [[Project](https://embodiedcity.github.io/Embodied-R/)]
 
+- **IPR-1**: "IPR-1: Interactive Physical Reasoner", *CVPR 2026*. [[Paper](https://arxiv.org/abs/2511.15407)] [[Project](https://mybearyzhang.github.io/ipr-1)]
+
 - **RoBridge**: "RoBridge: A Hierarchical Architecture Bridging Cognition and Execution for General Robotic Manipulation", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.01709)] [[Project](https://abliao.github.io/RoBridge/)]
 
 - **Visual Embodied Brain**: "Visual Embodied Brain: Let Multimodal Large Language Models See, Think, and Control in Spaces", *arXiv, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.00123)] [[Code](https://github.com/OpenGVLab/VeBrain)]
