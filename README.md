@@ -957,6 +957,9 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 > Comprehensive reviews and taxonomies of VLA, world models, and embodied AI research.
 
+- **Embodied AI Safety**: "Safety in Embodied AI: A Survey of Risks, Attacks, and Defenses", *arXiv 2026*. [[Paper](https://arxiv.org/abs/2605.02900)] [[GitHub](https://github.com/x-zheng16/Awesome-Embodied-AI-Safety)]
+  - Surveys risks, attacks, and defenses across the embodied-AI stack: perception, cognition, planning, action, and agentic layers.
+
 - **Foundation Models in Robotics**: "Foundation Models in Robotics: Applications, Challenges, and the Future", *IJRR 2025*. [[Paper](https://arxiv.org/abs/2312.07843)] [[GitHub](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models)]
   - Surveys foundation models across perception, decision-making, and control in robotics.
 
