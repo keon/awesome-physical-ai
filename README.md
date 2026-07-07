@@ -487,6 +487,8 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 > Models implementing "thinking before acting" with explicit reasoning or value-guided search.
 
+- **KeyStone**: "Geometry Guided Self-Consistency for Physical AI", *arXiv, May 2026*. [[Paper](https://arxiv.org/abs/2605.08638)] [[Code](https://github.com/dywsjtu/keystone)]
+
 - **Hume**: "Hume: Introducing Deliberative Alignment in Embodied AI", *arXiv, May 2025*. [[Paper](https://arxiv.org/abs/2505.XXXXX)]
 
 - **Embodied-CoT**: "Robotic Control via Embodied Chain-of-Thought Reasoning", *arXiv, Jul 2024*. [[Paper](https://arxiv.org/abs/2407.08693)] [[Project](https://embodied-cot.github.io/)]
