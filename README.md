@@ -1205,6 +1205,7 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **Awesome World Models for Robotics**: [[GitHub](https://github.com/leofan90/Awesome-World-Models)]
 - **Awesome-VLA-Post-Training**: [[GitHub](https://github.com/AoqunJin/Awesome-VLA-Post-Training)]
 - **Awesome-BFM-Papers**: [[GitHub](https://github.com/yuanmingqi/awesome-bfm-papers)]
+- **Physical AI Atlas**: [[Web](https://www.d-fairy.fr/atlas/en/)] — Bilingual (EN/FR) open-data reference tracking companies, startups, labs, humanoid robots, VLA models, chips and simulators. Sourced, CC BY 4.0, per-entity pages + JSON endpoints.
 - **Awesome Embodied VLA/VA/VLN**: [[GitHub](https://github.com/jonyzhang2023/awesome-embodied-vla-va-vln)]
 - **Awesome VLA Study**: [[GitHub](https://github.com/MilkClouds/awesome-vla-study)]
 
