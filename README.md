@@ -1108,6 +1108,8 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 | WorldGym | World model evaluation | Policy evaluation | ICLR 2026 Submission |
 | ManipulationNet | Zero-shot benchmark | Fair comparison | [Project](https://manipulation-net.github.io/) |
 
+**Tactile Data Tools**: [TLabel](https://github.com/liesliy/tlabel) — Open-source tactile data annotation & processing toolkit (`pip install tlabel`), providing unified data format standards across 10+ sensor adapters (GelSight, PaXini, Daimon, UniVTAC, etc.). FTP-1 recommended. 14K+ PyPI downloads.
+
 ### Simulation Platforms
 
 | Platform | Focus | Links |
