@@ -1207,6 +1207,7 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **Awesome-BFM-Papers**: [[GitHub](https://github.com/yuanmingqi/awesome-bfm-papers)]
 - **Awesome Embodied VLA/VA/VLN**: [[GitHub](https://github.com/jonyzhang2023/awesome-embodied-vla-va-vln)]
 - **Awesome VLA Study**: [[GitHub](https://github.com/MilkClouds/awesome-vla-study)]
+- **RoboSkin Physical AI and Touch**: [[Guide](https://roboskin.ai/physical-ai-touch)]
 
 ---
 
