@@ -1117,6 +1117,7 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 | Isaac Lab / Isaac Sim | NVIDIA robotics simulation | [Project](https://developer.nvidia.com/isaac-sim) |
 | MuJoCo Playground | Browser-based MuJoCo | [Paper](https://arxiv.org/abs/2502.08844) · [Project](https://playground.mujoco.org/) |
 | OmniGibson | High-fidelity home simulation | [Paper](https://arxiv.org/abs/2311.01014) · [Project](https://behavior.stanford.edu/omnigibson/) |
+| OmniSim | Agent-operated robotics simulation (HTTP/JSON + MCP) | [Code](https://github.com/omnilink-tech/omnisim) |
 | Habitat 2.0 | Navigation & rearrangement | [Paper](https://arxiv.org/abs/2106.14405) · [Project](https://aihabitat.org/) |
 | BEHAVIOR-1K | 1,000 everyday activities | [Paper](https://arxiv.org/abs/2403.09227) · [Project](https://behavior.stanford.edu/) |
 | iGibson | Interactive environments | [Paper](https://arxiv.org/abs/2012.02924) · [Project](https://svl.stanford.edu/igibson/) |
