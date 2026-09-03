@@ -772,6 +772,9 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **RoboPAIR**: "Jailbreaking LLM-Controlled Robots", *ICRA 2025*. [[Paper](https://arxiv.org/abs/2410.13691)] [[Project](https://robopair.org/)]
 
+- **Provael**: "Provael: an open red-team harness for vision-language-action policies", *Software, Zenodo, 2026*. [[DOI](https://doi.org/10.5281/zenodo.21984184)] [[Code](https://github.com/provael/provael)]
+  - Runnable harness rather than a paper: perturbs the instruction or observation a VLA policy receives in simulation and reports an attack-success rate with a 95% Wilson interval and a benign control arm. Reproduces RoboPAIR-style instruction attacks; three adversarial families carry a real-model result and the rest are stub-validated only.
+
 - **RoboGuard**: "Safety Guardrails for LLM-Enabled Robots", *arXiv, Apr 2025*. [[Paper](https://arxiv.org/abs/2504.XXXXX)]
 
 - "Highlighting the Safety Concerns of Deploying LLMs/VLMs in Robotics", *arXiv, Feb 2024*. [[Paper](https://arxiv.org/abs/2402.10340)]
