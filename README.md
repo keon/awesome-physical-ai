@@ -431,6 +431,8 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **GAIA-1**: "GAIA-1: A Generative World Model for Autonomous Driving", *arXiv, Sep 2023*. [[Paper](https://arxiv.org/abs/2309.17080)]
 
+- **DriveVA**: "DriveVA: Video Action Models are Zero-Shot Drivers", *ECCV 2026*. [[Paper](https://link.springer.com/chapter/10.1007/978-3-032-37718-0_19)] [[Code](https://github.com/xiaomi-mlab/DriveVA)]
+
 - **GameNGen**: "Diffusion Models Are Real-Time Game Engines", *arXiv, Aug 2024*. [[Paper](https://arxiv.org/abs/2408.14837)]
 
 - **DIAMOND**: "Diffusion for World Modeling: Visual Details Matter in Atari", *NeurIPS 2024*. [[Paper](https://arxiv.org/abs/2405.12399)] [[Code](https://github.com/eloialonso/diamond)]
