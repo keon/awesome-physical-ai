@@ -451,6 +451,8 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 > World models designed for robotic manipulation, navigation, and physical reasoning.
 
+- **LeWAM**: "Latent evolving World Action Model", *arXiv, Sep 2026*. [[Paper](https://arxiv.org/abs/2609.27455)] [[Code](https://github.com/XuejiFang/LeWAM)]
+
 - **Structured World Models**: "Structured World Models from Human Videos", *RSS 2023*. [[Paper](https://arxiv.org/abs/2308.10901)] [[Project](https://human-world-model.github.io/)]
 
 - **WHALE**: "WHALE: Towards Generalizable and Scalable World Models for Embodied Decision-making", *arXiv, Nov 2024*. [[Paper](https://arxiv.org/abs/2411.05619)]
