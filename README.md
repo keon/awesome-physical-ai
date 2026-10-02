@@ -479,6 +479,8 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **DreamDojo**: "DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos", *arXiv, Feb 2026*. [[Paper](https://arxiv.org/abs/2602.06949)] [[Project](https://dreamdojo-world.github.io/)] [[Code](https://github.com/NVIDIA/DreamDojo)]
   - Foundation world model from NVIDIA GEAR pretrained on 44K hours of egocentric human video (largest to date); continuous latent actions enable interaction knowledge transfer. Real-time 10.81 FPS after distillation.
 
+- **MolmoMotion**: "MolmoMotion: Forecasting Point Trajectories in 3D with Language Instruction", *NeurIPS 2026 Spotlight*. [[Paper](https://arxiv.org/abs/2606.18558)]
+
 ---
 
 ## Reasoning & Planning
