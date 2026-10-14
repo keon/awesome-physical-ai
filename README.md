@@ -43,6 +43,7 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
   - [Humanoid Robots](#humanoid-robots)
   - [Manipulation](#manipulation)
   - [Navigation](#navigation)
+  - [Autonomous Driving](#autonomous-driving)
 - [Sim-to-Real Transfer](#sim-to-real-transfer)
 - [Surveys](#surveys)
 - [Resources](#resources)
@@ -928,6 +929,16 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 - **InternNav**: "Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation", *arXiv, Dec 2025*. [[Paper](https://arxiv.org/abs/2512.08186)] [[Project](https://internrobotics.github.io/internvla-n1-dualvln.github.io/)] [[Code](https://github.com/InternRobotics/InternNav)]
 
 - **OmniVLA-Nav**: "OmniVLA: An Omni-Modal Vision-Language-Action Model for Robot Navigation", *arXiv, Sep 2025*. [[Paper](https://arxiv.org/abs/2509.19480)] [[Project](https://omnivla-nav.github.io/)] [[Code](https://github.com/NHirose/OmniVLA)]
+
+### Autonomous Driving
+
+> Learning-based and hybrid controllers for autonomous vehicles in mixed traffic.
+
+- **VLM-MPC**: "VLM-MPC: Model predictive controller augmented vision language model for autonomous driving", *Transportation Research Part C: Emerging Technologies, 2026*. [[Paper](https://www.sciencedirect.com/science/article/pii/S0968090X25004917)] [[Code](https://github.com/Keke-Long/VLM-MPC)]
+  - Uses a VLM to set driving parameters while an asynchronous model predictive controller accounts for engine lag and executes closed-loop vehicle control.
+
+- **PERPL**: "Physics enhanced residual policy learning (PERPL) for safety cruising in mixed traffic platooning under actuator and communication delay", *Transportation Research Part C: Emerging Technologies, 2026*. [[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0968090X26002809)]
+  - Combines a physics-based control policy with a learned residual policy for decentralized mixed-traffic platooning, accounting for actuator and communication delays.
 
 ---
 
