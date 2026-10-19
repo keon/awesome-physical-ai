@@ -789,6 +789,9 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 > Agents that continuously learn and adapt without forgetting prior skills.
 
+- **RHD**: "Recursive Harness Distillation across Agents for Robot Manipulation", *arXiv, Sep 2026*. [[Paper](https://arxiv.org/abs/2609.33378)] [[Project](https://seungyeon.me/RHD/)]
+  - Distills Astra's robot-intervention experience into a reusable playbook for Luna and recursively refines it from Luna's execution feedback without updating agent or VLA weights.
+
 - **Voyager**: "VOYAGER: An Open-Ended Embodied Agent with Large Language Models", *arXiv, May 2023*. [[Paper](https://arxiv.org/abs/2305.16291)] [[Project](https://voyager.minedojo.org/)] [[Code](https://github.com/MineDojo/Voyager)]
   - First LLM-powered agent in Minecraft autonomously building a skill library.
 
