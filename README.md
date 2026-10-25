@@ -123,9 +123,15 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **π0.5**: "π0.5: A Vision-Language-Action Model with Open-World Generalization", *Physical Intelligence, Apr 2025*. [[Paper](https://arxiv.org/abs/2504.16054)] [[Project](https://www.pi.website/blog/pi05)] [[Code](https://github.com/Physical-Intelligence/openpi)]
 
-- **π0.6**: "π0.6: A VLA that Learns from Experience", *Physical Intelligence, 2025*. [[Blog](https://www.physicalintelligence.company/blog/pistar06)]
+- **π\*0.6**: "π\*0.6: a VLA That Learns From Experience", *Physical Intelligence, Nov 2025*. [[Paper](https://arxiv.org/abs/2511.14759)] [[Blog](https://www.physicalintelligence.company/blog/pistar06)]
 
 - **GR-3**: "GR-3 Technical Report", *ByteDance Seed, Jul 2025*. [[Paper](https://arxiv.org/abs/2507.15493)] [[Project](https://seed.bytedance.com/GR3)]
+- **Wall-OSS**: "Igniting VLMs toward the Embodied Space", *Galbot, Sep 2025*. [[Paper](https://arxiv.org/abs/2509.11766)] [[Code](https://github.com/X-Square-Robot/wall-x)]
+  - Open-source, tightly-coupled VLA with unified cross-embodiment chain-of-thought and a two-stage recipe (discrete action priors, then flow-matching control); weights and recipes released.
+
+- **MolmoAct**: "MolmoAct: Action Reasoning Models that can Reason in Space", *Allen Institute for AI (AI2), Aug 2025*. [[Paper](https://arxiv.org/abs/2508.07917)] [[Code](https://github.com/allenai/molmoact)]
+  - Action Reasoning Model that emits explicit depth perception, reasoning, and action token sequences; data, weights, and code fully open.
+
 
 - **UniVLA**: "UniVLA: Unified Vision-Language-Action Model", *arXiv, Jun 2025*. [[Paper](https://arxiv.org/abs/2506.19850)] [[Code](https://github.com/baaivision/UniVLA)]
   - **TL;DR**: Models vision, language, and actions as single interleaved stream of discrete tokens (VQ image tokens + FAST/DCT action tokens) in 8.5B autoregressive VLA. Two training stages: (1) post-train VLM with text/images to predict future frames, (2) finetune with vision and action token prediction. Emphasis on post-training stage to align VLM representations with robot tasks. Strong results on CALVIN, LIBERO, and SimplerEnv-Bridge.
