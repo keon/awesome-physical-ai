@@ -550,6 +550,8 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 
 - **PRED**: "Pre-emptive Action Revision by Environmental Feedback", *CoRL 2024*. [[Paper](https://arxiv.org/abs/2409.XXXXX)]
 
+- **Spotter**: "Spotter: Let the Embodied Model Lead, and the VLM Reflect for It", *arXiv, Sep 2026*. [[Paper](https://arxiv.org/abs/2609.36808)] [[Project](https://zqc3117.github.io/Spotter/)] [[Code](https://github.com/zqc3117/Spotter)]
+
 ---
 
 ## Learning Paradigms
