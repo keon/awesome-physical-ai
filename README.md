@@ -1167,6 +1167,7 @@ A curated list of academic papers and resources on **Physical AI** — focusing 
 | UFACTORY | Affordable robot arms | xArm | [Web](https://www.ufactory.cc/) |
 | Trossen Robotics | Research platforms | ViperX, WidowX, ALOHA | [Web](https://www.trossenrobotics.com/) |
 | Flexiv | Adaptive robot arms | Rizon | [Web](https://www.flexiv.com/) |
+| Humyn Labs | Egocentric data for robot learning | Egocentric sample datasets (stereo, depth, IMU, multi-view) | [Web](https://humynlabs.ai/) · [HF](https://huggingface.co/humyn-labs) |
 
 ### Research Labs & Initiatives
 
